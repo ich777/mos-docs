@@ -1,229 +1,229 @@
-🏠 Introduction
+# 🏠 Introduction
 
-Overview of the OS
+- Overview of the OS
 
-Beta / Early Development Notes
+- Beta / Early Development Notes
 
-License / Open Source Information
+- License / Open Source Information
 
-Project Philosophy & Vision
+- Project Philosophy & Vision
 
-📦 Installation
+# 📦 Installation
 
-Releases / Changelog
+- Releases / Changelog
 
-Create Bootable Media
+- Create Bootable Media
 
-🧭 Quick Start
+# 🧭 Quick Start
 
-First Login
+- First Login
 
-WebUI Overview
+- WebUI Overview
 
-Start Network Configuration
+- Start Network Configuration
 
-Create a Storage Pool
+- Create a Storage Pool
 
-Start the First Container
+- Start the First Container
 
-Create the First VM
+- Create the First VM
 
-Create the First Shares
+- Create the First Shares
 
-⚙️ System Management
+# ⚙️ System Management
 
-🔧 WebUI
+## 🔧 WebUI
 
-Layout & Navigation
+- Layout & Navigation
 
-Dashboard Features
+- Dashboard Features
 
-Menu Structure
+- Menu Structure
 
-Widgets & Status Information
+- Widgets & Status Information
 
-💻 Command Line
+## 💻 Command Line
 
-Essential CLI Commands
+- Essential CLI Commands
 
-Managing System Services
+- Managing System Services
 
-Reading Logs
+- Reading Logs
 
-🔁 Updates & Upgrades
+## 🔁 Updates & Upgrades
 
-OS Updates
+- OS Updates
 
-Kernel Updates
+- Kernel Updates
 
-Rollback Procedures
+- Rollback Procedures
 
-🌐 Networking
+## 🌐 Networking
 
-Basic Configuration (DHCP, Static)
+- Basic Configuration (DHCP, Static)
 
-Interfaces & Bonds
+- Interfaces & Bonds
 
-VLANs
+- VLANs
 
-Routing
+- Routing
 
-DNS
+- DNS
 
-Firewall Basics
+- Firewall Basics
 
-Port Management
+- Port Management
 
-Remote Access (SSH, WebUI)
+- Remote Access (SSH, WebUI)
 
-💾 Storage
+# 💾 Storage
 
-📚 Storage Pools
+## 📚 Storage Pools
 
-Creating Pools
+- Creating Pools
 
-Mixed Disk Size Handling
+- Mixed Disk Size Handling
 
-Hot-Swap / Pool Expansion
+- Hot-Swap / Pool Expansion
 
-Pool Monitoring
+- Pool Monitoring
 
-🧲 Filesystems
+## 🧲 Filesystems
 
-Supported Filesystems
+- Supported Filesystems
 
-Compression
+- Compression
 
-Encryption
+- Encryption
 
-Snapshots & Versioning
+- Snapshots & Versioning
 
-📂 Shares
+## 📂 Shares
 
-SMB/NFS Configuration
+- SMB/NFS Configuration
 
-Access Control
+- Access Control
 
-Attributes
+- Attributes
 
-🐳 Container
+# 🐳 Container
 
-Docker
+## Docker
 
-Enable Docker
+- Enable Docker
 
-Manage Images & Containers
+- Manage Images & Containers
 
-Logs & Monitoring
+- Logs & Monitoring
 
-Networking for Containers
+- Networking for Containers
 
-Volumes & Persistence
+- Volumes & Persistence
 
-Compose / Stack Management
+- Compose / Stack Management
 
-LXC
+## LXC
 
-Create LXC Containers
+- Create LXC Containers
 
-Resource Limits
+- Resource Limits
 
-Templates
+- Templates
 
-Snapshots & Backups
+- Snapshots & Backups
 
-Networking & Storage for LXC
+- Networking & Storage for LXC
 
-🖥️ Virtual Machines
+# 🖥️ Virtual Machines
 
-Create VMs
+- Create VMs
 
-CPU & RAM Configuration
+- CPU & RAM Configuration
 
-Virtual Networks
+- Virtual Networks
 
-Virtual Disks
+- Virtual Disks
 
-GPU Passthrough
+- GPU Passthrough
 
-USB Passthrough
+- USB Passthrough
 
-Snapshots
+- Snapshots
 
-👤 User & Access Management
+# 👤 User & Access Management
 
-Create Users
+- Create Users
 
-Create Groups
+- Create Groups
 
-Permissions & Roles
+- Permissions & Roles
 
-🔌 API
+# 🔌 API
 
-API Overview
+- API Overview
 
-Authentication
+- Authentication
 
-Endpoints
+- Endpoints
 
-System
+- System
 
-Storage
+- Storage
 
-Containers
+- Containers
 
-VMs
+- VMs
 
-Users
+- Users
 
-Webhooks & Automations
+- Webhooks & Automations
 
-🛠️ Troubleshooting
+# 🛠️ Troubleshooting
 
-Boot Issues
+- Boot Issues
 
-Network Issues
+- Network Issues
 
-Containers Not Starting
+- Containers Not Starting
 
-VMs Not Starting
+- VMs Not Starting
 
-Pool Errors
+- Pool Errors
 
-Share Permission Issues
+- Share Permission Issues
 
-WebUI Not Accessible
+- WebUI Not Accessible
 
-Understanding System Logs
+- Understanding System Logs
 
-Known Bugs & Workarounds
+- Known Bugs & Workarounds
 
-🔄 Migration
+# 🔄 Migration
 
-Import Data from Other Systems
+- Import Data from Other Systems
 
-Docker Import
+- Docker Import
 
-LXC Import
+- LXC Import
 
-VM Import
+- VM Import
 
-Pool Migration
+- Pool Migration
 
-Import Network Configuration
+- Import Network Configuration
 
-🗺️ Roadmap
+# 🗺️ Roadmap
 
-Planned Features
+- Planned Features
 
-Milestones
+- Milestones
 
-Announced Changes
+- Announced Changes
 
-📜 Changelog
+# 📜 Changelog
 
-Changes per Version
+- Changes per Version
 
-Breaking Changes
+- Breaking Changes
 
-Upgrade Notes
+- Upgrade Notes
