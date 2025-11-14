@@ -1,40 +1,226 @@
-# ⬜ Getting Started
+# 🏠 Introduction
 
-[Was ist das OS?](Getting_Started/Was_ist_das_OS.md)
+- Überblick über das OS
 
-[Releases / Changelog](https://github.com/ich777/mos-releases/releases)
+- Beta-/Early-Development-Hinweise
 
-# ⬜ Installation
+- Lizenz / Open Source Information
 
-Bootmedium erstellen
+- Projektphilosophie & Vision
 
-Installation Schritt-für-Schritt
+# 📦 Installation
 
-Partitionierung (Standard + Advanced)
+- [Releases / Changelog](https://github.com/ich777/mos-releases/releases)
 
-# ⬜ Features
+- Bootmedium erstellen
 
-Besonderheiten des OS
+# 🧭 Quick Start
 
-Pakete / Services
+- Erster Login
 
-Management Tools (WebUI? CLI?)
+- Überblick WebUI
 
-# ⬜ Configuration
-Netzwerk
+- Netzwerk starten
 
-Firewall
+- Storage-Pool erstellen
 
-Storage / Pools
+- ersten Container starten
 
-Users & Permissions
+- erste VM starten
 
-Updates
+- erste Shares anlegen
 
-# ⬜ Advanced
+# ⚙️ System Management
+**🔧 WebUI**
 
-SSH / CLI Guide
+- Layout & Navigation
 
-Automatisierungen
+- Dashboard Funktionen
 
-Debugging
+- Menüstruktur
+
+- Widgets / Statusinfos
+
+**💻 Command Line**
+
+- Wichtige CLI-Befehle
+
+- Systemdienste steuern
+
+- Logs lesen
+
+**🔁 Updates & Upgrades**
+
+- OS Updates
+
+- Kernel Updates
+
+- Rollback-Prozesse
+
+# 🌐 Networking
+
+- Basiskonfiguration (DHCP, Static)
+
+- Interfaces & Bonds
+
+- VLANs
+
+- Routing
+
+- DNS
+
+- Firewall-Grundkonfiguration
+
+- Port-Management
+
+- Remote-Zugriff (SSH, WebUI)
+
+# 💾 Storage
+**📚 Storage Pools**
+
+- Pools erstellen
+
+- Mischgrößen-Handling
+
+- Hot-Swap / Pool-Erweiterung
+
+- Pool-Monitoring
+
+**🧲 Filesysteme**
+
+- unterstützte Dateisysteme
+
+- Kompression
+
+- Verschlüsselung
+
+- Snapshots / Versioning
+
+**📂 Shares**
+
+- SMB/NFS Konfiguration
+
+- Zugangsteuerung
+
+- Attribute
+
+# 🐳 Container
+**Docker**
+
+- Docker aktivieren
+
+- Images & Container verwalten
+
+- Logs & Monitoring
+
+- Netzwerke für Container
+
+- Volumes & Persistenz
+
+- Compose / Stack-Management
+
+**LXC**
+
+- LXC Container erstellen
+
+- Ressourcenlimits
+
+- Templates
+
+- Snapshot & Backup
+
+- Netzwerk & Storage für LXC
+
+# 🖥️ Virtual Machines
+
+- VM erstellen
+
+- CPU- & RAM-Konfiguration
+
+- Virtuelle Netzwerke
+
+- Virtuelle Disks
+
+- GPU Passthrough
+
+- USB Passthrough
+
+- Snapshots
+
+# 👤 User & Access Management
+
+- Benutzer erstellen
+
+- Gruppen erstellen
+
+- Rechte & Rollen
+
+# 🔌 API
+
+- API Überblick
+
+- Authentifizierung
+
+- Endpoints
+
+- System
+
+- Storage
+
+- Containers
+
+- VMs
+
+- Users
+
+- Webhooks & Automations
+
+# 🛠️ Troubleshooting
+
+- Boot-Probleme
+
+- Netzwerk Probleme
+
+- Containers starten nicht
+
+- VM startet nicht
+
+- Pool Fehler
+
+- Rechteprobleme bei Shares
+
+- WebUI nicht erreichbar
+
+- System-Logs verstehen
+
+- bekannte Bugs & Workarounds
+
+# 🔄 Migration
+
+- Daten von anderen Systemen übernehmen
+
+- Docker Import
+
+- LXC Import
+
+- VM Import
+
+- Pool Migration
+
+- Netzwerk-Konfiguration importieren
+
+# 🗺️ Roadmap
+
+- Geplante Features
+
+- Meilensteine
+
+- Bekanntgegebene Änderungen
+
+# 📜 Changelog
+
+- Änderungen pro Version
+
+- Breaking Changes
+
+- Upgrade Hinweise
