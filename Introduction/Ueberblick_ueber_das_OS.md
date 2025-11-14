@@ -1,6 +1,6 @@
-# 🚀 Next-Gen OS for Storage, Containers & Virtualization
+# 🚀 Next-Gen OS für Storage, Containers & Virtualization
 
-Unser neues Betriebssystem kombiniert leistungsstarke Funktionen aus den Bereichen Speicherverwaltung, Containerisierung und Virtualisierung – alles in einer modernen, einfach bedienbaren Plattform.
+Unser neues Betriebssystem MOS kombiniert leistungsstarke Funktionen aus den Bereichen Speicherverwaltung, Containerisierung und Virtualisierung – alles in einer modernen, einfach bedienbaren Plattform.
 
 # 🧱 Flexible Storage-Pools
 
