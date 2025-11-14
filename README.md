@@ -1,6 +1,6 @@
 # 🏠 Introduction
 
-- Overview of the OS
+- [Overview of the OS](Introduction/Overview_of_the_OS.md)
 
 - Beta / Early Development Notes
 
@@ -10,9 +10,9 @@
 
 # 📦 Installation
 
-- Releases / Changelog
+- [Releases / Changelog](https://github.com/ich777/mos-releases/releases)
 
-- Create Bootable Media
+- [Create Bootable Media](Installation/Create_Bootable_Media.md)
 
 # 🧭 Quick Start
 
