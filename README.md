@@ -2,15 +2,9 @@
 
 [Was ist das OS?](Getting_Started/Was_ist_das_OS.md)
 
-Zielgruppe
-
-Systemanforderungen
-
-Releases / Changelog
+[Releases / Changelog](https://github.com/ich777/mos-releases/releases)
 
 # ⬜ Installation
-
-ISO Download
 
 Bootmedium erstellen
 
