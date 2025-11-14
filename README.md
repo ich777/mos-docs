@@ -12,7 +12,7 @@
 
 - [Releases / Changelog](https://github.com/ich777/mos-releases/releases)
 
-- Bootmedium erstellen
+- [Bootmedium erstellen](Installation/Bootmedium_erstellen.md)
 
 # 🧭 Quick Start
 
