@@ -1,226 +1,229 @@
-# 🏠 Introduction
+🏠 Introduction
 
-- [Überblick über das OS](Introduction/Ueberblick_ueber_das_OS.md)
+Overview of the OS
 
-- Beta-/Early-Development-Hinweise
+Beta / Early Development Notes
 
-- Lizenz / Open Source Information
+License / Open Source Information
 
-- Projektphilosophie & Vision
+Project Philosophy & Vision
 
-# 📦 Installation
+📦 Installation
 
-- [Releases / Changelog](https://github.com/ich777/mos-releases/releases)
+Releases / Changelog
 
-- [Bootmedium erstellen](Installation/Bootmedium_erstellen.md)
+Create Bootable Media
 
-# 🧭 Quick Start
+🧭 Quick Start
 
-- Erster Login
+First Login
 
-- Überblick WebUI
+WebUI Overview
 
-- Netzwerk starten
+Start Network Configuration
 
-- Storage-Pool erstellen
+Create a Storage Pool
 
-- ersten Container starten
+Start the First Container
 
-- erste VM starten
+Create the First VM
 
-- erste Shares anlegen
+Create the First Shares
 
-# ⚙️ System Management
-**🔧 WebUI**
+⚙️ System Management
 
-- Layout & Navigation
+🔧 WebUI
 
-- Dashboard Funktionen
+Layout & Navigation
 
-- Menüstruktur
+Dashboard Features
 
-- Widgets / Statusinfos
+Menu Structure
 
-**💻 Command Line**
+Widgets & Status Information
 
-- Wichtige CLI-Befehle
+💻 Command Line
 
-- Systemdienste steuern
+Essential CLI Commands
 
-- Logs lesen
+Managing System Services
 
-**🔁 Updates & Upgrades**
+Reading Logs
 
-- OS Updates
+🔁 Updates & Upgrades
 
-- Kernel Updates
+OS Updates
 
-- Rollback-Prozesse
+Kernel Updates
 
-# 🌐 Networking
+Rollback Procedures
 
-- Basiskonfiguration (DHCP, Static)
+🌐 Networking
 
-- Interfaces & Bonds
+Basic Configuration (DHCP, Static)
 
-- VLANs
+Interfaces & Bonds
 
-- Routing
+VLANs
 
-- DNS
+Routing
 
-- Firewall-Grundkonfiguration
+DNS
 
-- Port-Management
+Firewall Basics
 
-- Remote-Zugriff (SSH, WebUI)
+Port Management
 
-# 💾 Storage
-**📚 Storage Pools**
+Remote Access (SSH, WebUI)
 
-- Pools erstellen
+💾 Storage
 
-- Mischgrößen-Handling
+📚 Storage Pools
 
-- Hot-Swap / Pool-Erweiterung
+Creating Pools
 
-- Pool-Monitoring
+Mixed Disk Size Handling
 
-**🧲 Filesysteme**
+Hot-Swap / Pool Expansion
 
-- unterstützte Dateisysteme
+Pool Monitoring
 
-- Kompression
+🧲 Filesystems
 
-- Verschlüsselung
+Supported Filesystems
 
-- Snapshots / Versioning
+Compression
 
-**📂 Shares**
+Encryption
 
-- SMB/NFS Konfiguration
+Snapshots & Versioning
 
-- Zugangsteuerung
+📂 Shares
 
-- Attribute
+SMB/NFS Configuration
 
-# 🐳 Container
-**Docker**
+Access Control
 
-- Docker aktivieren
+Attributes
 
-- Images & Container verwalten
+🐳 Container
 
-- Logs & Monitoring
+Docker
 
-- Netzwerke für Container
+Enable Docker
 
-- Volumes & Persistenz
+Manage Images & Containers
 
-- Compose / Stack-Management
+Logs & Monitoring
 
-**LXC**
+Networking for Containers
 
-- LXC Container erstellen
+Volumes & Persistence
 
-- Ressourcenlimits
+Compose / Stack Management
 
-- Templates
+LXC
 
-- Snapshot & Backup
+Create LXC Containers
 
-- Netzwerk & Storage für LXC
+Resource Limits
 
-# 🖥️ Virtual Machines
+Templates
 
-- VM erstellen
+Snapshots & Backups
 
-- CPU- & RAM-Konfiguration
+Networking & Storage for LXC
 
-- Virtuelle Netzwerke
+🖥️ Virtual Machines
 
-- Virtuelle Disks
+Create VMs
 
-- GPU Passthrough
+CPU & RAM Configuration
 
-- USB Passthrough
+Virtual Networks
 
-- Snapshots
+Virtual Disks
 
-# 👤 User & Access Management
+GPU Passthrough
 
-- Benutzer erstellen
+USB Passthrough
 
-- Gruppen erstellen
+Snapshots
 
-- Rechte & Rollen
+👤 User & Access Management
 
-# 🔌 API
+Create Users
 
-- API Überblick
+Create Groups
 
-- Authentifizierung
+Permissions & Roles
 
-- Endpoints
+🔌 API
 
-- System
+API Overview
 
-- Storage
+Authentication
 
-- Containers
+Endpoints
 
-- VMs
+System
 
-- Users
+Storage
 
-- Webhooks & Automations
+Containers
 
-# 🛠️ Troubleshooting
+VMs
 
-- Boot-Probleme
+Users
 
-- Netzwerk Probleme
+Webhooks & Automations
 
-- Containers starten nicht
+🛠️ Troubleshooting
 
-- VM startet nicht
+Boot Issues
 
-- Pool Fehler
+Network Issues
 
-- Rechteprobleme bei Shares
+Containers Not Starting
 
-- WebUI nicht erreichbar
+VMs Not Starting
 
-- System-Logs verstehen
+Pool Errors
 
-- bekannte Bugs & Workarounds
+Share Permission Issues
 
-# 🔄 Migration
+WebUI Not Accessible
 
-- Daten von anderen Systemen übernehmen
+Understanding System Logs
 
-- Docker Import
+Known Bugs & Workarounds
 
-- LXC Import
+🔄 Migration
 
-- VM Import
+Import Data from Other Systems
 
-- Pool Migration
+Docker Import
 
-- Netzwerk-Konfiguration importieren
+LXC Import
 
-# 🗺️ Roadmap
+VM Import
 
-- Geplante Features
+Pool Migration
 
-- Meilensteine
+Import Network Configuration
 
-- Bekanntgegebene Änderungen
+🗺️ Roadmap
 
-# 📜 Changelog
+Planned Features
 
-- Änderungen pro Version
+Milestones
 
-- Breaking Changes
+Announced Changes
 
-- Upgrade Hinweise
+📜 Changelog
+
+Changes per Version
+
+Breaking Changes
+
+Upgrade Notes
