@@ -14,7 +14,7 @@
 
 - [Start Network Configuration](Quick_Start/Start_Network_Configuration.md)
 
-- Create a Storage Pool
+- [Create a Storage Pool](Quick_Start/Create_a_Storage_Pool.md)
 
 - Start the First Container
 
