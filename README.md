@@ -64,7 +64,7 @@
 
 ## 🧲 Filesystems
 
-- Supported Filesystems
+- [Supported Filesystems](https://github.com/ich777/mos-docs/blob/master/Quick_Start/Create_a_Storage_Pool.md#filesystem)
 
 ## 📂 Shares
 
