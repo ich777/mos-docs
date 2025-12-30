@@ -124,7 +124,7 @@
 
 # 🔌 API
 
-- API Overview
+- [API Overview](API/API_Overview.md)
 
 # 🛠️ Troubleshooting
 
