@@ -12,7 +12,7 @@
 
 - [WebUI Overview](Quick_Start/WebUI_Overview.md)
 
-- Start Network Configuration
+- [Start Network Configuration](Quick_Start/Start_Network_Configuration.md)
 
 - Create a Storage Pool
 
