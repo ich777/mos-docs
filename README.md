@@ -60,7 +60,7 @@
 
 ## 📚 Storage Pools
 
-- Creating Pools
+- [Creating Pools](Quick_Start/Create_a_Storage_Pool.md)
 
 ## 🧲 Filesystems
 
