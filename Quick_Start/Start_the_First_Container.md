@@ -374,6 +374,22 @@ Configuration options:
 
 ---
 
+## Autostart Behavior
+
+Autostart behavior differs depending on how containers are deployed.
+
+### Docker Compose Stacks
+- Autostart is controlled at the **stack level**
+- Individual containers inherit the stack behavior
+
+### Single Containers
+- Autostart can be enabled or disabled per container
+
+**Recommendation:**
+Use stack-level autostart for multi-container applications to ensure proper startup order.
+
+---
+
 ## MOS Hub
 
 The **MOS Hub** provides a template-based container deployment experience similar to an app store.
