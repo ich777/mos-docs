@@ -20,7 +20,7 @@
 
 - Create the First VM
 
-- Create the First Shares
+- [Create the First Shares](Quick_Start/Create_the_First_Shares.md)
 
 # ⚙️ System Management
 
