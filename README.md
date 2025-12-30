@@ -2,12 +2,6 @@
 
 - [Overview of the OS](Introduction/Overview_of_the_OS.md)
 
-- Beta / Early Development Notes
-
-- License / Open Source Information
-
-- Project Philosophy & Vision
-
 # 📦 Installation
 
 - [Releases / Changelog](https://github.com/ich777/mos-releases/releases)
@@ -15,8 +9,6 @@
 - [Create Bootable Media](Installation/Create_Bootable_Media.md)
 
 # 🧭 Quick Start
-
-- First Login
 
 - WebUI Overview
 
@@ -54,8 +46,6 @@
 
 - OS Updates
 
-- Kernel Updates
-
 - Rollback Procedures
 
 ## 🌐 Networking
@@ -63,16 +53,6 @@
 - Basic Configuration (DHCP, Static)
 
 - Interfaces & Bonds
-
-- VLANs
-
-- Routing
-
-- DNS
-
-- Firewall Basics
-
-- Port Management
 
 - Remote Access (SSH, WebUI)
 
@@ -82,21 +62,9 @@
 
 - Creating Pools
 
-- Mixed Disk Size Handling
-
-- Hot-Swap / Pool Expansion
-
-- Pool Monitoring
-
 ## 🧲 Filesystems
 
 - Supported Filesystems
-
-- Compression
-
-- Encryption
-
-- Snapshots & Versioning
 
 ## 📂 Shares
 
@@ -125,10 +93,6 @@
 ## LXC
 
 - Create LXC Containers
-
-- Resource Limits
-
-- Templates
 
 - Snapshots & Backups
 
@@ -162,39 +126,7 @@
 
 - API Overview
 
-- Authentication
-
-- Endpoints
-
-- System
-
-- Storage
-
-- Containers
-
-- VMs
-
-- Users
-
-- Webhooks & Automations
-
 # 🛠️ Troubleshooting
-
-- Boot Issues
-
-- Network Issues
-
-- Containers Not Starting
-
-- VMs Not Starting
-
-- Pool Errors
-
-- Share Permission Issues
-
-- WebUI Not Accessible
-
-- Understanding System Logs
 
 - Known Bugs & Workarounds
 
