@@ -10,7 +10,7 @@ Multiple drives can be combined into dynamic pools, even if they have different 
 
 Manage Docker containers, create LXC containers, or run full virtual machines — all within a unified environment, without the need for additional tools.
 
-# 📁 NAS-Funktionen inklusive
+# 📁 NAS functions included
 
 Create shared folders, manage users, and assign granular permissions. The system works perfectly as a central file and network solution.
 
@@ -18,7 +18,7 @@ Create shared folders, manage users, and assign granular permissions. The system
 
 The platform is built on a stable Linux foundation and is currently in active early development. New features and improvements are added continuously.
 
-# 🌐 Vollständig über WebUI & API steuerbar
+# 🌐 Fully controllable via WebUI & API
 
 The entire system is managed through a modern WebUI or alternatively via SSH.
 Behind the scenes, the interface communicates exclusively through a powerful, extensive API — ideal for automation, integrations, and custom tooling.
