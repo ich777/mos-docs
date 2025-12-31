@@ -86,9 +86,9 @@
 
 - Networking for Containers
 
-- Volumes & Persistence
+- [Volumes & Persistence](https://github.com/ich777/mos-docs/blob/master/Quick_Start/Start_the_First_Container.md#appdata)
 
-- Compose / Stack Management
+- [Compose / Stack Management](https://github.com/ich777/mos-docs/blob/master/Quick_Start/Start_the_First_Container.md#docker-compose)
 
 ## LXC
 
