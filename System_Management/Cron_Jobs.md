@@ -73,6 +73,7 @@ Defines the command that will be executed.
 - If no command is provided and only a script path is defined, the command is created automatically
 
 **Example:**
+
 `bash /boot/optional/scripts/cron/test_script.sh > /dev/null 2>&1`
 
 This ensures:
