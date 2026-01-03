@@ -9,6 +9,10 @@ The **Logs** menu is located under:
 
 All log files located in `/var/log` and its subdirectories can be viewed from this interface.
 
+Example:
+
+<img width="1180" height="691" alt="image" src="https://github.com/user-attachments/assets/eb605947-3c66-4dc9-a295-705d84e6a1cf" />
+
 ---
 
 ## Log Viewer Overview
