@@ -22,9 +22,7 @@
 
 - [Create the First Shares](Quick_Start/Create_the_First_Shares.md)
 
-# ⚙️ System Management
-
-## 🔧 WebUI
+# 🔧 WebUI
 
 - Layout & Navigation
 
@@ -34,27 +32,45 @@
 
 - Widgets & Status Information
 
-## 💻 Command Line
+# ⚙️ System Management
 
-- Essential CLI Commands
-
-- Managing System Services
-
-- Reading Logs
-
-## 🔁 Updates & Upgrades
+## 🔁 System Updates
 
 - OS Updates
 
 - Rollback Procedures
 
-## 🌐 Networking
+## 💻 System Configuration
+
+- System Settings
+
+- Cron Jobs
+
+- Reading Logs
+
+- MOS HUB
+
+## 🗂 Virtualization
+
+- Docker Service
+
+- LXC Service
+  
+- VM Service
+
+## 🌐 Network
 
 - [Basic Configuration (DHCP, Static)](https://github.com/ich777/mos-docs/blob/master/Quick_Start/Start_Network_Configuration.md#network-interfaces)
 
 - [Interfaces & Bonds](https://github.com/ich777/mos-docs/blob/master/Quick_Start/Start_Network_Configuration.md#type)
 
 - Remote Access (SSH, WebUI)
+
+## 🌐 Hardware
+
+- Drivers
+
+- Boot
 
 # 💾 Storage
 
