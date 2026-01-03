@@ -46,7 +46,7 @@
 
 - [Cron Jobs](System_Management/Cron_Jobs.md)
 
-- Reading Logs
+- [Reading Logs](System_Management/Logs.md)
 
 - [MOS HUB](System_Management/MOS_Hub_Settings.md)
 
