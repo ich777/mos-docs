@@ -59,9 +59,9 @@ Defines the CPU frequency scaling policy.
 - `ondemand`
 
 **Common options:**
-- `ondemand` – Dynamic scaling based on load
-- `performance` – Maximum performance
-- `powersave` – Reduced power consumption
+- `ondemand` – Dynamic scaling based on current system load
+- `performance` – Forces maximum CPU frequency
+- `powersave` – Forces minimum CPU frequency to reduce power consumption
 - `conservative` – Gradual frequency scaling with slower ramp-up, optimized for power efficiency
 
 **Recommendation:**  
