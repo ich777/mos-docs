@@ -16,6 +16,10 @@ The **Cron Jobs** menu is located under:
 
 Here you can create new cron jobs and manage existing ones.
 
+Example:
+
+<img width="1180" height="692" alt="image" src="https://github.com/user-attachments/assets/4c5157df-1e74-4589-9356-a824bcd0d71d" />
+
 ---
 
 ## Creating a New Cron Job
