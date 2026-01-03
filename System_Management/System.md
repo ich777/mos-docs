@@ -8,6 +8,10 @@ The **System** menu is located under:
 
 These settings affect global system behavior and should be configured carefully.
 
+Example:
+
+<img width="1180" height="691" alt="image" src="https://github.com/user-attachments/assets/b24793a3-1a80-4bad-9025-bf4c2953e4d1" />
+
 ---
 
 ## General System Settings
