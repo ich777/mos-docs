@@ -42,7 +42,7 @@
 
 ## 💻 System Configuration
 
-- System Settings
+- [System Settings](System_Management/System.md)
 
 - [Cron Jobs](System_Management/Cron_Jobs.md)
 
