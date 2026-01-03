@@ -48,7 +48,7 @@
 
 - Reading Logs
 
-- MOS HUB
+- [MOS HUB](System_Management/MOS_Hub_Settings.md)
 
 ## 🗂 Virtualization
 
