@@ -70,7 +70,7 @@
 
 - [Drivers](System_Management/Drivers.md)
 
-- Boot
+- [Boot](System_Management/Boot.md)
 
 # 💾 Storage
 
