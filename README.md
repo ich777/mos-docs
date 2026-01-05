@@ -72,6 +72,8 @@
 
 - [Boot](System_Management/Boot.md)
 
+- Sensors
+
 # 💾 Storage
 
 ## 📚 Storage Pools
