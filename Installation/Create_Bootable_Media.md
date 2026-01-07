@@ -10,7 +10,7 @@ Follow these steps to prepare a bootable USB drive:
 
 2. Download the Installation Files
 
-    Download the latest version of the system from the [Releases](https://github.com/ich777/mos-releases/releases) section.
+    Download the latest version of the system (.zip Archive) from the [Releases](https://github.com/ich777/mos-releases/releases) from the **Assets** section.
 
 3. Extract the Files
 
