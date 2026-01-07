@@ -157,13 +157,14 @@ Uses multiple independent disks without traditional RAID.
 - Flexible and simple disk management
 
 **Important:**
-The **nonraid driver is not installed by default**.
+The **nonraid driver is not installed by default, after installing the driver you have to reboot**.
 
 To enable this pool type:
 1. Go to **Settings**
 2. Open **Drivers**
 3. Click **Install Drivers**
 4. Install the **nonraid** driver
+5. Reboot your Server
 
 **Use cases:**
 - Simple parity-based storage
