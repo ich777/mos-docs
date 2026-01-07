@@ -44,6 +44,8 @@ Defines where Docker stores internal data such as images and layers.
 
 This directory should be located on a fast and reliable storage pool.
 
+**WARNING:** If you plan to put this directory on a mergerfs pool, you __have to__ select the real path to a disk from your mergerfs pool wich is for example located at: `/var/mergerfs/main/system/docker`
+
 ---
 
 ### AppData
@@ -62,10 +64,13 @@ This location is critical for container persistence and should be backed up.
 
 Defines the Docker storage driver filesystem.
 
-**Default:**
-- `overlay2`
+**Options:**
+- `overlay2` (default)
+- `btrfs`
 
-This is the recommended and most stable option.
+Overlay2 is the recommended and most stable option, if you are using btrfs you can also select `btrfs` as the storage driver.
+
+**WARNING:** Changing the storage driver will mean that you have to recreate all your containers, if doing so, it is recommended to stop the Docker service, delete the directory for Docker which usually lives in your `system` folder, change the storage driver and enable the Docker service again.
 
 ---
 
