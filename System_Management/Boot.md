@@ -17,7 +17,15 @@ Example:
 
 ### Install to Disk
 
-Installs the system bootloader to a selected disk.
+Installs the system bootloader to a selected disk which will basically copies the contents from your `/boot` folder to the new drive.
+
+**WARNING:** After the installation finished, please shutdown or reboot your server immediately since all further changes after Install to disk __will not__ be saved.  
+  
+The recommended way is:
+1. Shutdown your server
+2. Remove the old boot media
+3. Start your server
+4. Change the boot order in your BIOS if necessary to boot from the new disk
 
 When clicking **Install to Disk**, an input form is displayed with the following options:
 
@@ -25,11 +33,12 @@ When clicking **Install to Disk**, an input form is displayed with the following
 
 #### Device
 
-Defines the target device where the bootloader will be installed.
+Defines the target device where the bootloader and files from your existing `/boot` directory will be installed.
 
 **Notes:**
 - Select the correct disk carefully
 - Installing the bootloader may overwrite existing boot data
+- After the installation finished, please shutdown/reboot your Server immediately and boot from the new disk
 
 ---
 
@@ -38,26 +47,23 @@ Defines the target device where the bootloader will be installed.
 Defines the filesystem used for the boot installation.
 
 **Notes:**
-- Must be compatible with the selected device
+- Must be compatible with the selected device (for installation to a HDD/SSD/NVME ext4 is the recommended filesystem)
 - Existing data on the selected filesystem may be affected
+- Please note that if you format a disk in a Linux filesystem type like ext4, btrfs, xfs your drive won't be readable anymore on Windows (there are tools out there which allow you to view/edit such filesystems on Windows)
 
 ---
 
 #### Extra Partition
 
-Optionally enables the creation or use of an additional partition.
+Optionally enables the creation or use of an additional partition for usage as a Pool device.
 
 **Options:**
 - Enable
 - Disable
 
 **Use cases:**
-- Separate boot-related data
-- Custom partition layouts
-- Advanced boot configurations
-
-**Warning:**  
-Incorrect partitioning may render the system unbootable.
+- Usage in a Pool
+- Backups
 
 ---
 
