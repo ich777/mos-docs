@@ -22,16 +22,6 @@
 
 - [Create the First Shares](Quick_Start/Create_the_First_Shares.md)
 
-# 🔧 WebUI
-
-- Layout & Navigation
-
-- Dashboard Features
-
-- Menu Structure
-
-- Widgets & Status Information
-
 # ⚙️ System Management
 
 ## 🔁 System Updates
@@ -142,10 +132,6 @@
 
 - [API Overview](API/API_Overview.md)
 
-# 🛠️ Troubleshooting
-
-- Known Bugs & Workarounds
-
 # 🔄 Migration
 
 - Import Data from Other Systems
@@ -160,18 +146,6 @@
 
 - Import Network Configuration
 
-# 🗺️ Roadmap
-
-- Planned Features
-
-- Milestones
-
-- Announced Changes
-
 # 📜 Changelog
 
-- Changes per Version
-
-- Breaking Changes
-
-- Upgrade Notes
+- [Releases](https://github.com/ich777/mos-releases/releases)
