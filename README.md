@@ -134,7 +134,7 @@
 
 # 📖 Advanced Usage
 
-- Tips & Tricks
+- [macvlan Host Shim (shim_bridge.sh)](https://github.com/ich777/mos-docs/blob/master/Advanced_Usage/macvlan_Host_Shim.md#macvlan-host-shim-shim_bridgesh)
 
 # 🔄 Migration
 
