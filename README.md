@@ -62,7 +62,7 @@
 
 - [Boot](System_Management/Boot.md)
 
-- Sensors
+- [Sensors](https://github.com/ich777/mos-docs/blob/master/System_Management/Sensors.md)
 
 # 💾 Storage
 
