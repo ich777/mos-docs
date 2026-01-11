@@ -27,13 +27,44 @@ This script solves that limitation by creating a dedicated macvlan interface on 
 
 ---
 
-## ⚙️ Script Configuration
+## ⚙️ Script
 
 ```
-bash
-shim_name="shim-br0"           # Name of the macvlan shim interface
-lan_mask="192.168.1.0"         # First half of the LAN subnet
-lan_route="192.168.1.128"      # Second half of the LAN subnet
+#!/bin/bash
+
+# Get interface name depending if bridged or not
+bridged=$(jq -r '.interfaces[] | select(.name == "eth0") | .type' /boot/config/network.json)
+if [ "$bridged" == "bridged" ] ; then
+  interface_name="br0"
+else
+  interface_name="eth0"
+fi
+
+# Set shim name
+shim_name="shim-${interface_name}"
+
+# Get host IP
+host_ip=$(ip -o -f inet addr show ${interface_name} | awk '{print $4}' | cut -d/ -f1 | head -1)
+
+# Get Docker network mode
+docker_net_mode=$(jq -r '.docker_net.mode' /boot/config/docker.json)
+if [ "$docker_net_mode" == "ipvlan" ] ; then
+  ip_link_add="ipvlan mode l2"
+else
+  ip_link_add="macvlan mode bridge"
+fi
+
+# Set up shim if not found
+if ! ip link | grep "${shim_name}" &> /dev/null ; then
+   echo "No $shim_name found, creating it now"
+   ip link add "$shim_name" link $interface_name type $ip_link_add
+   ip link set "$shim_name" up
+   ip route add ${host_ip%.*}.0/25 dev "$shim_name"
+   ip route add ${host_ip%.*}.128/25 dev "$shim_name"
+else
+   echo "$shim_name network already found, nothing todo"
+fi
+
 ```
 ---
 
