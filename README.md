@@ -132,6 +132,10 @@
 
 - [API Overview](API/API_Overview.md)
 
+# 📖 Advanced Usage
+
+- Tips & Tricks
+
 # 🔄 Migration
 
 - Import Data from Other Systems
