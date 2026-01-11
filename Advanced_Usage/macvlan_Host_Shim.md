@@ -1,34 +1,15 @@
-# macvlan Host Shim (shim_bridge.sh)
+# Network Host Shim (shim_bridge.sh)
 
-This script creates a persistent macvlan **shim interface** on the host system.
-It enables communication between the host and macvlan-based containers, which is not possible by default due to Linux kernel limitations.
+This script creates a persistent **host shim interface** to enable communication between the MOS host and container networks using **macvlan** or **ipvlan**.
 
----
-
-## 🧠 Background
-
-Linux macvlan interfaces are isolated from their parent interface by design.
-As a result:
-
-- Containers connected via macvlan **can reach the LAN**
-- The host **cannot communicate with macvlan containers**
-
-This script solves that limitation by creating a dedicated macvlan interface on the host itself.
-
----
-
-## 🔧 What This Script Does
-
-- Creates a macvlan interface (`shim-br0`) linked to `br0`
-- Brings the interface up automatically
-- Adds dedicated routing rules for the local LAN
-- Prevents routing loops by splitting the LAN into two `/25` networks
-- Recreates the setup automatically after every reboot
+It automatically adapts to:
+- Bridged or non-bridged network setups
+- macvlan or ipvlan Docker network modes
+- The active host interface and IP address
 
 ---
 
 ## ⚙️ Script
-
 ```
 #!/bin/bash
 
@@ -64,34 +45,116 @@ if ! ip link | grep "${shim_name}" &> /dev/null ; then
 else
    echo "$shim_name network already found, nothing todo"
 fi
-
 ```
 ---
 
-## ⚠️ Important:
-Adjust the IP ranges to match your local network layout.
-Incorrect subnet definitions may result in routing issues.
+## 🧠 Background
+
+Linux container networking modes such as **macvlan** and **ipvlan** isolate containers from the host by design.
+
+As a result:
+- Containers can access the LAN
+- The host cannot communicate with containers directly
+
+This script creates a dedicated shim interface on the host to restore host ↔ container connectivity in a controlled and safe way.
 
 ---
 
-## 🚀 Script Logic Overview
+## 🔧 What This Script Does
 
-- Checks if the shim interface already exists
+- Detects whether the host is using a bridged or non-bridged network
+- Automatically selects `br0` or `eth0` as the parent interface
+- Detects the active host IP address
+- Detects Docker network mode (`macvlan` or `ipvlan`)
+- Creates the appropriate shim interface type
+- Adds safe `/25` routing rules to avoid routing loops
+- Recreates the setup automatically after reboot
 
-- Creates a macvlan interface on br0 if missing
+---
 
-- Activates the interface
+## ⚙️ Automatic Configuration Logic
 
-- Adds routing rules for both LAN subnets
+### Network Interface Detection
 
-- Skips creation if the interface is already present
+The script reads the MOS network configuration:
+
+- If `eth0` is configured as **bridged** → `br0` is used
+- Otherwise → `eth0` is used directly
+
+This allows the same script to work on different network layouts without manual changes.
+
+---
+
+### Docker Network Mode Detection
+
+The Docker configuration is evaluated automatically:
+
+- `ipvlan` → creates an **ipvlan l2** shim
+- otherwise → creates a **macvlan bridge** shim
+
+This ensures compatibility with both Docker network modes.
+
+---
+
+## 🔁 Shim Interface Naming
+
+The shim interface name is generated dynamically:
+
+Examples:
+```
+shim-br0
+
+shim-eth0
+```
+
+---
+
+## 🌐 IP Address & Routing
+
+The script automatically:
+
+- Detects the host IP address
+
+- Derives the subnet from the host IP
+
+- Splits the subnet into two /25 ranges
+
+Routing rules applied:
+
+- <subnet>.0/25
+
+- <subnet>.128/25
+
+This prevents routing loops and ARP conflicts.
+
+---
+
+## 📜 Script Logic Overview
+
+- Detect active host interface (br0 or eth0)
+
+- Determine Docker network mode (macvlan or ipvlan)
+
+- Generate shim interface name dynamically
+
+- Detect host IP address
+
+- Check if shim interface already exists
+
+- Create shim interface if missing
+
+- Bring the interface up
+
+- Apply routing rules
+
+- Skip setup if the shim already exists
 
 ---
 
 ## 🔁 Persistence via Cron Job
 
-The macvlan shim interface is not persistent across reboots.
-To ensure the interface is recreated automatically, the script is executed at system startup using a cron job.
+The shim interface is not persistent across reboots.
+To ensure it is recreated automatically, the script must be executed at system startup.
 
 ### Cron Job Configuration
 
@@ -99,30 +162,61 @@ To ensure the interface is recreated automatically, the script is executed at sy
 
 - Schedule: @reboot
 
-Command: `bash /boot/optional/scripts/shim_bridge.sh`
+- Command:
+```
+bash /boot/optional/scripts/shim_bridge.sh
+```
 
 ---
 
-## 🖼️ Cron Job Configuration (WebUI)
+## 🖼️ Cron Job Configuration Screenshot
 
-<img width="713" height="586" alt="image" src="https://github.com/user-attachments/assets/c0c34823-bc7a-44a2-aa90-4c63cba84f64" />
+<img width="713" height="586" alt="image" src="https://github.com/user-attachments/assets/ee619a6b-12c2-43e5-8b39-994ded55e706" />
 
 ---
 
-## ✅ Typical Use Cases
+## ✅ Supported Use Cases
 
 - Docker containers using macvlan networking
 
-- Host ↔ container communication on bridged networks
+- Docker containers using ipvlan networking
+
+- Host ↔ container communication
+
+- Mixed bridged and non-bridged setups
 
 ---
 
-## ⚠️ Notes & Warnings
+## ⚠️ Notes & Best Practices
 
-- This is an advanced networking setup
+- This is an advanced networking feature
 
-- Not required when using ipvlan
+- Requires correct Docker and network configuration
 
-- Always document custom IP ranges and routing rules
+- Not needed for standard bridge-only setups
 
-- Verify connectivity after reboot
+- Always verify connectivity after reboot
+
+---
+
+## 🔍 Troubleshooting
+
+Check if the shim interface exists:
+```
+ip link show shim-br0
+```
+
+Verify routing table:
+```
+ip route
+```
+
+## ✅ Summary
+
+- Automatically adapts to MOS network configuration
+
+- Works with bridged and non-bridged setups
+
+- Supports macvlan and ipvlan transparently
+
+- Ensures persistent host ↔ container connectivity
