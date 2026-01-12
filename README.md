@@ -55,7 +55,7 @@ Your system, your data, your control.
 
 - [Post-Start Script](https://github.com/ich777/mos-docs/blob/master/System_Startup/Post-Start_Script.md)
 
-- [Pool Mount Scripts]
+- [Pool Mount Scripts](https://github.com/ich777/mos-docs/blob/master/System_Startup/Pool_Mount_Scripts.md)
 
 # ⚙️ System Management
 
@@ -172,6 +172,8 @@ Your system, your data, your control.
 - [macvlan Host Shim (shim_bridge.sh)](https://github.com/ich777/mos-docs/blob/master/Advanced_Usage/macvlan_Host_Shim.md#macvlan-host-shim-shim_bridgesh)
 
 - [Disable MD5 Verification](https://github.com/ich777/mos-docs/blob/master/Advanced_Usage/Disable_MD5_Verification.md)
+
+- [Early Boot Script (boot.sh)]
 
 # 🔄 Migration
 
