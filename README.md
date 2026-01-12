@@ -1,4 +1,31 @@
-# 🏠 Introduction
+# MOS Docs
+
+Welcome to the official documentation of **MOS**.
+
+MOS is a modern, modular server operating system focused on **simplicity**, **performance**, and **full local control**.
+It provides an intuitive WebUI for managing storage, containers, virtual machines, networking, and hardware — without hiding complexity from advanced users.
+
+MOS is designed for:
+- Home servers and homelabs
+- Small to medium self-hosted environments
+- Users who want full control without cloud dependencies
+
+This documentation guides you from first installation to advanced system configuration and migration scenarios.
+
+---
+
+## 🔒 Privacy & Local-First Design
+
+MOS is **local-first by design**.
+
+It does **not collect telemetry**, **usage statistics**, or **analytics**, and it does **not phone home**.
+Network connections are only made when explicitly triggered by the user (for example, during system or kernel updates).
+
+Your system, your data, your control.
+
+---
+
+# 🏠 Introduction MOS
 
 - [Overview of the OS](Introduction/Overview_of_the_OS.md)
 
