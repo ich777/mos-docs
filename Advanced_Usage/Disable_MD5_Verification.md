@@ -1,6 +1,7 @@
 ## Disable MD5 Verification
 
-MOS performs MD5 checksum verification to ensure data integrity during certain operations.
+MOS performs MD5 checksum verification on boot to ensure data integrity
+from image, rootfs and drivers image during boot.
 In advanced scenarios, this verification can be explicitly disabled.
 
 ### How to Disable MD5 Checks
@@ -15,9 +16,8 @@ In advanced scenarios, this verification can be explicitly disabled.
 
 - The existence of the file alone is sufficient
 
-- No restart is required unless the related operation is already running
 
-- Once this file exists, MD5 verification is completely disabled.
+- Once this file exists, MD5 verification is completely disabled
 
 ---
 
@@ -25,7 +25,6 @@ In advanced scenarios, this verification can be explicitly disabled.
 
 - Disabling MD5 checks is intended for advanced users only
 
-- It may reduce data integrity protection
 
 - Use this option only if you fully understand the implications
 
@@ -37,4 +36,4 @@ In advanced scenarios, this verification can be explicitly disabled.
 
 - File content is irrelevant
 
-- Recommended only for special or troubleshooting scenarios
+- Recommended only for special scenarios
