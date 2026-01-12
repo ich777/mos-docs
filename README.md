@@ -51,7 +51,9 @@ Your system, your data, your control.
 
 # 🚀 System Startup
 
-- [Pre-Start Script]
+- [Pre-Start Script](https://github.com/ich777/mos-docs/blob/master/System_Startup/Pre-Start_Script.md)
+
+- [Post-Start Script]
 
 # ⚙️ System Management
 
