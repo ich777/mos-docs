@@ -53,7 +53,9 @@ Your system, your data, your control.
 
 - [Pre-Start Script](https://github.com/ich777/mos-docs/blob/master/System_Startup/Pre-Start_Script.md)
 
-- [Post-Start Script]
+- [Post-Start Script](https://github.com/ich777/mos-docs/blob/master/System_Startup/Post-Start_Script.md)
+
+- [Pool Mount Scripts]
 
 # ⚙️ System Management
 
