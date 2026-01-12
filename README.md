@@ -189,10 +189,6 @@ Your system, your data, your control.
 
 - Import Network Configuration
 
-# 📜 Changelog
-
-- [Releases](https://github.com/ich777/mos-releases/releases)
-
 ---
 
 *Parts of this documentation were created with the assistance of AI tools and reviewed and adapted by the MOS team.*
