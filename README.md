@@ -173,7 +173,7 @@ Your system, your data, your control.
 
 - [Disable MD5 Verification](https://github.com/ich777/mos-docs/blob/master/Advanced_Usage/Disable_MD5_Verification.md)
 
-- [Early Boot Script (boot.sh)]
+- [Early Boot Script (boot.sh)](https://github.com/ich777/mos-docs/blob/master/Advanced_Usage/Early_Boot_Script.md)
 
 # 🔄 Migration
 
@@ -192,3 +192,7 @@ Your system, your data, your control.
 # 📜 Changelog
 
 - [Releases](https://github.com/ich777/mos-releases/releases)
+
+---
+
+*Parts of this documentation were created with the assistance of AI tools and reviewed and adapted by the MOS team.*
