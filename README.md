@@ -49,6 +49,10 @@ Your system, your data, your control.
 
 - [Create the First Shares](Quick_Start/Create_the_First_Shares.md)
 
+# 🚀 System Startup
+
+- [Pre-Start Script]
+
 # ⚙️ System Management
 
 ## 🔁 System Updates
