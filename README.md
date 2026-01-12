@@ -163,6 +163,8 @@ Your system, your data, your control.
 
 - [macvlan Host Shim (shim_bridge.sh)](https://github.com/ich777/mos-docs/blob/master/Advanced_Usage/macvlan_Host_Shim.md#macvlan-host-shim-shim_bridgesh)
 
+- [Disable MD5 Verification](https://github.com/ich777/mos-docs/blob/master/Advanced_Usage/Disable_MD5_Verification.md)
+
 # 🔄 Migration
 
 - Import Data from Other Systems
