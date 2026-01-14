@@ -89,7 +89,7 @@ Your system, your data, your control.
 
 - [Interfaces & Bonds](https://github.com/ich777/mos-docs/blob/master/Quick_Start/Start_Network_Configuration.md#type)
 
-- Remote Access (SSH, WebUI)
+- [Token](System_Management/Token.md)
 
 ## 🌐 Hardware
 
