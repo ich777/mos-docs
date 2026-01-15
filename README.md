@@ -191,4 +191,4 @@ Your system, your data, your control.
 
 ---
 
-*Parts of this documentation were created with the assistance of AI tools and reviewed and adapted by the MOS team.*
+*Parts of this documentation were created with the assistance of AI tool, all AI-generated content has undergone review, but it may still contain inaccuracies, omissions, or outdated information.*
