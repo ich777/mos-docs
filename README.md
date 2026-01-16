@@ -2,26 +2,24 @@
 
 Welcome to the official documentation of **MOS**.
 
-MOS is a modern, modular server operating system focused on **simplicity**, **performance**, and **full local control**.
-It provides an intuitive WebUI for managing storage, containers, virtual machines, networking, and hardware — without hiding complexity from advanced users.
+MOS is a lightweight operating system based on Devuan, designed specifically for small, energy‑efficient home servers.
 
-MOS is designed for:
-- Home servers and homelabs
-- Small to medium self-hosted environments
-- Users who want full control without cloud dependencies
+The primary goal of MOS is to provide a simple, reliable, and low‑overhead platform for self‑hosting, virtualization, and homelab environments.
+
+This project started as a personal solution, and at some point I decided to release it publicly to see if it resonates with others.
+MOS is still evolving, but the core ideas are already in place.
 
 This documentation guides you from first installation to advanced system configuration and migration scenarios.
 
 ---
 
-## 🔒 Privacy & Local-First Design
+## 🔒 Open Source & Privacy
 
-MOS is **local-first by design**.
+MOS is and will always remain fully open source.
 
-It does **not collect telemetry**, **usage statistics**, or **analytics**, and it does **not phone home**.
-Network connections are only made when explicitly triggered by the user (for example, during system or kernel updates).
-
-Your system, your data, your control.
+No data is collected.
+There is no telemetry, no tracking, and no usage reporting of any kind.
+Everything runs locally and stays fully under your control.
 
 ---
 
