@@ -2,7 +2,7 @@
 
 Welcome to the official documentation of **MOS**.
 
-MOS is a lightweight operating system based on Devuan, designed specifically for small, energy‑efficient home servers.
+**MOS** is a lightweight operating system based on Devuan, designed specifically for **small, energy‑efficient home servers.**
 
 The primary goal of MOS is to provide a simple, reliable, and low‑overhead platform for self‑hosting, virtualization, and homelab environments.
 
@@ -15,11 +15,21 @@ This documentation guides you from first installation to advanced system configu
 
 ## 🔒 Open Source & Privacy
 
-MOS is and will always remain fully open source.
+**MOS is and will always remain fully open source.**
 
-No data is collected.
-There is no telemetry, no tracking, and no usage reporting of any kind.
+**No data is collected.**
+There is **no telemetry, no tracking, and no usage reporting** of any kind.
 Everything runs locally and stays fully under your control.
+
+---
+
+## Target Audience
+MOS is intended for:
+
+- Homelab users
+- Self‑hosters
+- Developers
+- Anyone looking for a minimal, efficient server OS with modern tooling
 
 ---
 
