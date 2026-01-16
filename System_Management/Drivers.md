@@ -1,106 +1,134 @@
-# Driver
+# Drivers
 
-The **Driver** menu allows you to install and manage additional hardware driver packages.  
-These drivers extend system functionality by enabling support for specific hardware components and features.
-
-The **Driver** menu is located under:
-
-**Settings → Hardware → Driver**
-
-This section is intended for advanced hardware configuration.
-
-Example:
-
-<img width="1451" height="871" alt="image" src="https://github.com/user-attachments/assets/78030398-0179-4f30-bdd2-7bf7c1cc5d68" />
+MOS manages hardware drivers through **Driver Plugins**.
+Drivers are installed, updated, and managed using the **MOS Hub**, providing a unified and modular approach to hardware support.
 
 ---
 
-## Driver Management
+## 🧩 Driver Plugins Overview
 
-### Install Driver
+Drivers in MOS are distributed as **plugins**.
+Each driver plugin is maintained independently and may provide different levels of functionality depending on the maintainer.
 
-To install a new driver package, click the **Plus (+) icon**.
+There are two common types of driver plugins:
 
-You will be prompted to define the following parameters:
+- **Driver-only plugins**  
+  These plugins only install the required kernel modules or drivers.
 
----
+- **Driver plugins with configuration UI**  
+  These plugins install drivers and provide an additional configuration page inside MOS.
 
-### Driver
-
-Defines the driver category or type.
-
-**Examples:**
-- `coral`
-- `dvb`
-- `nonraid`
-- `nvidia`
-- `sriov`
-
-The available options depend on system compatibility and repository support.
+The available features depend entirely on the plugin maintainer.
 
 ---
 
-### Name
+## 📍 Where to Find Driver Plugins
 
-Defines the specific driver package name.
+Driver plugins are available via the **MOS Hub**.
 
-**Examples:**
-- `dvb-digital-services`
-- `dvb-libreelec`
-- `nvidia-driver`
-- `nonraid-utils`
+Navigate to:
 
----
+**MOS Hub → Search**
 
-### Version
+Driver plugins are only shown if they are provided by one of the configured repositories.
 
-Defines the version of the selected driver package.
-
-**Notes:**
-- Available versions depend on the selected driver and repository
-- Using the recommended or default version is advised unless a specific version is required
+<img width="2547" height="1275" alt="image" src="https://github.com/user-attachments/assets/84298187-48e0-4c81-bf92-cf4ed714b5d2" />
 
 ---
 
-## Installed Drivers
+## ⬇️ Installing a Driver Plugin
 
-All installed driver packages are displayed in a list.
+To install a driver plugin:
 
-For each installed driver, the following information is shown:
-- Driver type
-- Package name
-- Version
+- Open **MOS Hub**
 
----
+- Search for the desired driver
 
-### Remove Driver
+- Click Install on the driver plugin card
 
-Installed drivers can be removed from the system.
+- Select the desired release version
 
-**Notes:**
-- Removing a driver may disable related hardware or features
-- A system reboot may be required after removal
-- Ensure the driver is no longer in use before deleting it
+- Confirm the installation
+
+<img width="803" height="448" alt="image" src="https://github.com/user-attachments/assets/1fb710c5-25e5-453a-99ef-67b0055b95fe" />
 
 ---
 
-## Best Practices
+## 📦 Release Selection
 
-- Install only drivers required for your hardware
-- Avoid unnecessary or experimental drivers on production systems
-- Reboot the system after installing or removing drivers if prompted
-- Keep track of installed driver versions for troubleshooting
+Some driver plugins provide multiple releases.
+You can select the version you want to install before proceeding.
+
+This allows:
+
+- Compatibility with specific kernel versions
+
+- Testing newer or older driver releases
+
+- Controlled upgrades
 
 ---
 
-## Summary
+## 🧩 After Installation
 
-The Driver menu provides flexible management of additional hardware drivers.
+After installation, driver plugins appear under:
 
-**Key points:**
-- Install drivers via the Plus (+) icon
-- Select driver type, package name, and version
-- View all installed drivers in one place
-- Remove drivers when they are no longer needed
+**Plugins**
 
-Proper driver management ensures optimal hardware compatibility and system stability.
+From there, you can:
+
+- Open the plugin
+
+- View driver or adapter information
+
+- Configure settings (if provided by the plugin)
+
+- Rremove the plugin
+
+<img width="2564" height="1271" alt="image" src="https://github.com/user-attachments/assets/ebfa62b9-7808-4023-9ad1-8c3a7a060fa7" />
+
+---
+
+## ⚙️ Driver Configuration (Optional)
+
+Some driver plugins provide a dedicated configuration interface.
+
+Depending on the plugin, this may include:
+
+- Adapter or device information
+
+- Driver selection or switching
+
+- Advanced hardware options
+
+- Update or download actions
+
+If a plugin does not provide a configuration page, it simply installs and manages the driver in the background.
+
+<img width="2547" height="1272" alt="image" src="https://github.com/user-attachments/assets/e7be62f4-a7c6-438b-9959-d01a8c68601a" />
+
+---
+
+## ⚠️ Important Notes
+
+- Driver availability depends on repository configuration
+
+- Not all hardware requires additional drivers
+
+- Plugin behavior varies by maintainer
+
+- Kernel updates may affect driver compatibility
+
+---
+
+## ✅ Summary
+
+- Drivers in MOS are managed as plugins
+
+- Installation is done via the MOS Hub
+
+- Plugins may be driver-only or include configuration pages
+
+- Installed drivers are managed under Plugins
+
+- Functionality depends on the plugin maintainer
