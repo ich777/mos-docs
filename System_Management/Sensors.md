@@ -149,7 +149,7 @@ Typical dashboard use cases:
 
 - Custom system metrics
 
-<img width="1920" height="914" alt="image" src="https://github.com/user-attachments/assets/9f332bf8-154b-41ca-9e90-8a424bb1b2df" />
+<img width="1920" height="914" alt="image" src="https://github.com/user-attachments/assets/c4cc89cd-1a0f-47e7-86b4-f453e672a7ca" />
 
 ---
 
