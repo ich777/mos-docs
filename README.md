@@ -179,7 +179,7 @@ MOS is intended for:
 
 # 📖 Advanced Usage
 
-- [macvlan Host Shim (shim_bridge.sh)](https://github.com/ich777/mos-docs/blob/master/Advanced_Usage/macvlan_Host_Shim.md#macvlan-host-shim-shim_bridgesh)
+- [macvlan Host Shim](https://github.com/ich777/mos-docs/blob/master/Advanced_Usage/macvlan_Host_Shim.md#macvlan-host-shim-shim_bridgesh)
 
 - [Disable MD5 Verification](https://github.com/ich777/mos-docs/blob/master/Advanced_Usage/Disable_MD5_Verification.md)
 
