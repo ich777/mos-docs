@@ -83,7 +83,7 @@ MOS is intended for:
 
 - [MOS HUB](System_Management/MOS_Hub_Settings.md)
 
-- [Notify Notifications](
+- [MOS Notify](https://github.com/ich777/mos-docs/blob/master/System_Management/MOS_Notify.md)
 
 ## 🗂 Virtualization
 
