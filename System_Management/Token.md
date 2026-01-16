@@ -61,8 +61,7 @@ A GitHub token allows MOS to access GitHub repositories with higher API limits.
 
 **Recommended settings:**
 - **Expiration:** No expiration
-- **Repository access:** All repositories
-- **Permissions:** Read-only
+- **Repository access:** Public repositories
 
 #### Token Usage in MOS
 
