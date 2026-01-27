@@ -43,7 +43,7 @@ Available pool types:
 
 - `single`
 - `multi`
-- `mergefs`
+- `mergerfs`
 - `nonraid` *(requires additional driver)*
 
 Each type serves a different use case and offers different levels of redundancy and flexibility.
@@ -124,9 +124,9 @@ General data storage, media libraries
 
 ---
 
-### mergefs
+### mergerfs
 
-Creates a pooled filesystem using multiple independent disks combined via MergeFS, optionally protected by SnapRAID.
+Creates a pooled filesystem using multiple independent disks combined via mergerfs, optionally protected by SnapRAID.
 
 **Characteristics:**
 - Disks remain independent
@@ -242,7 +242,7 @@ Choosing the correct pool type and filesystem is essential for a stable and reli
 - `single + xfs` → Appdata, cache, downloads  
 - `multi + raid1` → Critical data  
 - `multi + raid5` → General storage  
-- `mergefs + SnapRAID` → Media storage  
+- `mergerfs + SnapRAID` → Media storage  
 - `nonraid` → Flexible parity-based storage (driver required)
 
 Plan your pool layout carefully before creating pools.
