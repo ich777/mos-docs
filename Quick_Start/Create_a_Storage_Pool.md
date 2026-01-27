@@ -243,6 +243,6 @@ Choosing the correct pool type and filesystem is essential for a stable and reli
 - `multi + raid1` → Critical data  
 - `multi + raid5` → General storage  
 - `mergerfs + SnapRAID` → Media storage  
-- `nonraid` → Flexible parity-based storage (driver required)
+- `mergerfs + nonraid` → Flexible parity-based storage (driver required)
 
 Plan your pool layout carefully before creating pools.
