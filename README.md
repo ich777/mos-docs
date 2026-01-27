@@ -43,6 +43,8 @@ MOS is intended for:
 
 - [Create Bootable Media](Installation/Create_Bootable_Media.md)
 
+- [Testing MOS in a VM]
+
 # 🧭 Quick Start
 
 - [WebUI Overview](Quick_Start/WebUI_Overview.md)
