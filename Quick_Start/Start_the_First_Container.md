@@ -44,7 +44,7 @@ Defines where Docker stores internal data such as images and layers.
 
 This directory should be located on a fast and reliable storage pool.
 
-**WARNING:** If you plan to put this directory on a mergerfs pool, you __have to__ select the real path to a disk from your mergerfs pool wich is for example located at: `/var/mergerfs/main/system/docker`
+**WARNING:** If you plan to put this directory on a mergerfs pool, you __have to__ select the real path to a disk from your mergerfs pool which is for example located at: `/var/mergerfs/main/system/docker`
 
 ---
 
