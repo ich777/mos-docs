@@ -55,7 +55,7 @@ You can use MOS with common hypervisors such as:
 | Setting     | Value                        |
 | ----------- | ---------------------------- |
 | Firmware    | **UEFI**                     |
-| CPU         | 2 cores or more              |
+| CPU         | 4 cores or more              |
 | Memory      | 8 GB recommended             |
 | Network     | Bridged or NAT               |
 
