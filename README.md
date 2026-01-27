@@ -43,7 +43,7 @@ MOS is intended for:
 
 - [Create Bootable Media](Installation/Create_Bootable_Media.md)
 
-- [Testing MOS in a VM]
+- [Testing MOS in a VM](https://github.com/ich777/mos-docs/blob/master/Installation/Testing_MOS_in_a_VM.md)
 
 # 🧭 Quick Start
 
