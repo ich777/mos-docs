@@ -32,6 +32,8 @@ The plugin installs the required OpenZFS kernel modules and CLI tools.
 
 Once installed, ZFS tools such as ```zpool``` and ```zfs``` become available on the system.
 
+---
+
 ## 🖥️ Usage (CLI)
 
 ZFS is ***(currently)*** CLI only
