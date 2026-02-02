@@ -204,6 +204,8 @@ Available options:
 - **btrfs** – Required for advanced features like snapshots  
 - **vfat** – Only for removable or temporary storage
 
+If you want to use ZFS, please take a look at the following section: [ZFS](https://github.com/ich777/mos-docs/blob/master/System_Management/ZFS.md)
+
 ---
 
 ## Advanced Options
