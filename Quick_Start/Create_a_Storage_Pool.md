@@ -10,6 +10,8 @@ Pools are required for:
 - Virtual machines
 - Media and backup data
 
+If you want to use ZFS, please take a look at the following section: [ZFS](https://github.com/ich777/mos-docs/blob/master/System_Management/ZFS.md)
+
 Example:
 
 <img width="2544" height="1273" alt="image" src="https://github.com/user-attachments/assets/8653c710-4a0f-4382-8014-2135a99a8899" />
