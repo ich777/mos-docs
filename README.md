@@ -179,6 +179,10 @@ MOS is intended for:
 
 - [API Overview](API/API_Overview.md)
 
+# 🏬 MOS Hub
+
+-
+
 # 📖 Advanced Usage
 
 - [Docker Local Host Access (Host Shim)](https://github.com/ich777/mos-docs/blob/master/Advanced_Usage/Docker_Local_Host_Access_Shim.md)
