@@ -181,7 +181,7 @@ MOS is intended for:
 
 # 🏬 MOS Hub
 
--
+- [Creating Your Own MOS Hub Repository](https://github.com/ich777/mos-docs/blob/master/MOS_Hub/Create_Your_Own_MOS_Hub_Custom_Repository.md)
 
 # 📖 Advanced Usage
 
