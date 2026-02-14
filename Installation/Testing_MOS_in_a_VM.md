@@ -73,7 +73,7 @@ The extracted image must be mounted as a USB device.
 
 How this is done depends on the hypervisor:
 
-- **KVM / QEMU / Proxmox**
+- **KVM / QEMU**
 
   Attach the image as a USB storage device
 
@@ -82,6 +82,102 @@ How this is done depends on the hypervisor:
   Use USB passthrough or raw image support with UEFI enabled
 
 > The image already contains everything needed to boot MOS.
+
+---
+
+## 🧱 Proxmox VE Configuration
+
+The following steps describe how to run the MOS test image inside Proxmox VE.
+
+> ⚠️ Important
+> 
+> MOS requires UEFI boot and Secure Boot must be disabled.
+
+---
+
+### 1️⃣ Create the VM
+
+Create a new VM with the following settings:
+
+| Setting	    | Value |
+| ----------- | ---------------------------- |
+| BIOS	      | OVMF (UEFI) |
+| Display	    | VirtIO-GPU |
+| Secure Boot | ❌ Disabled |
+| Machine	q35 | (recommended) |
+| Disk	      | Can be empty |
+
+---
+
+### 2️⃣ Disable Secure Boot
+
+Proxmox enables Secure Boot by default when using OVMF.
+
+You must disable it using one of the following methods:
+
+#### Option A (Recommended)
+
+During VM creation:
+
+- Make sure “Pre-enrolled keys” is NOT checked
+
+---
+
+#### Option B
+
+If Secure Boot is still active:
+
+- Boot the VM
+
+- Enter the UEFI Setup
+
+- Disable Secure Boot
+
+- Save and exit
+
+---
+
+### 3️⃣ Upload the MOS Image
+
+Upload ```mos_amd64.img``` to:
+
+```
+/var/lib/vz/template/iso/
+```
+
+---
+
+### 4️⃣ Move the Image
+
+From the Proxmox host shell:
+
+```
+cp /var/lib/vz/template/iso/mos_amd64.img /var/lib/vz/images/mos_amd64.img
+```
+
+---
+
+### 5️⃣ Modify the VM Configuration
+
+Edit the VM config:
+
+```
+nano /etc/pve/qemu-server/<vmid>.conf
+```
+
+Add:
+
+```
+usb0: spice,usb3=1
+args: -drive file=/var/lib/vz/images/mos_amd64.img,format=raw,if=none,id=usbdisk -device usb-storage,drive=usbdisk
+```
+This attaches the MOS image as a USB storage device.
+
+---
+
+### ▶️ Start the VM
+
+Start the VM and MOS will boot automatically.
 
 ---
 
