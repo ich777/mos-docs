@@ -23,7 +23,7 @@ Understanding which ports are in use is important for:
 
 ---
 
-##🔎 Port Details
+## 🔎 Port Details
 
 ---
 
