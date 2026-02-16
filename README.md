@@ -37,6 +37,8 @@ MOS is intended for:
 
 - [Overview of the OS](Introduction/Overview_of_the_OS.md)
 
+- [System Architecture](https://github.com/ich777/mos-docs/blob/master/Introduction/System_Architecture.md)
+
 # 📦 Installation
 
 - [Releases / Changelog](https://github.com/ich777/mos-releases/releases)
