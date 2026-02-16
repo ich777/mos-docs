@@ -22,4 +22,6 @@ Follow these steps to prepare a bootable USB drive:
 
     Insert the USB stick into the target machine, select it in the boot menu, and the installation process can begin immediately.
 
-5. A network connection will be needed to access the WebUI to set initial account passwords.    
+5. A network connection will be needed to access the WebUI to set initial account passwords.
+
+   Go to the Webui via http://MOS-IP/
