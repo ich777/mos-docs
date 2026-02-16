@@ -44,6 +44,8 @@ MOS is intended for:
 
 - [System Architecture](https://github.com/ich777/mos-docs/blob/master/Introduction/System_Architecture.md)
 
+- [Network Ports used by MOS](https://github.com/ich777/mos-docs/blob/master/Introduction/Network_Ports_Used_by_MOS.md)
+
 # 📦 Installation
 
 - [Releases / Changelog](https://github.com/ich777/mos-releases/releases)
