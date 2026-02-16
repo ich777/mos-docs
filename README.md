@@ -1,3 +1,10 @@
+<div align="center">
+  <picture>
+    <source srcset="./images/mos-black.png" media="(prefers-color-scheme: light)">
+    <img src="./images/mos-white.png" width="300">
+  </picture>
+</div>
+
 # MOS Docs
 
 Welcome to the official documentation of **MOS**.
