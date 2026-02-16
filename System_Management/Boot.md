@@ -61,9 +61,19 @@ Optionally enables the creation or use of an additional partition for usage as a
 - Enable
 - Disable
 
-**Use cases:**
-- Usage in a Pool
-- Backups
+If Extra Partition is enabled:
+
+- The remaining free disk space will be allocated as a separate partition
+
+- This partition can later be used for:
+
+  - Storage pools
+
+  - Docker data
+
+  - Shares
+
+  - General persistent storage
 
 ---
 
