@@ -161,12 +161,23 @@ Uses multiple independent disks without traditional RAID.
 **Important:**
 The **nonraid driver is not installed by default, after installing the driver you have to reboot**.
 
-To enable this pool type:
-1. Go to **Settings**
-2. Open **Drivers**
-3. Click **Install Drivers**
-4. Install the **nonraid** driver
-5. Reboot your Server
+#### Installation (via MOS Hub)
+
+The NonRAID driver is not installed by default.
+
+It must be installed as a plugin via the MOS Hub.
+
+To install:
+
+- Open MOS Hub
+
+- Search for NonRAID Driver
+
+- Select the desired release
+
+- Click Install
+
+- Reboot the server
 
 **Use cases:**
 - Simple parity-based storage
