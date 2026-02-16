@@ -66,8 +66,6 @@ http://<mos-ip>
 
 - Used for system events and UI updates
 
-- Required for proper WebUI event handling
-
 ---
 
 # 🧭 Optional Port
