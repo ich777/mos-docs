@@ -25,7 +25,7 @@ Understanding which ports are in use is important for:
 
 ## 🔎 Port Details
 
----
+
 
 ## 🌍 Port 80 — WebUI
 
@@ -69,6 +69,41 @@ http://<mos-ip>
 ---
 
 # 🧭 Optional Port
+
+---
+
+## 🖥️ Virtual Machine Console Ports (VNC)
+
+When virtual machines are started in MOS, a VNC console is automatically assigned.
+
+MOS uses incremental VNC ports starting at:
+
+| Port | Purpose
+| ----------- | --------------------------- |
+| 5900 | First VM VNC console |
+| 5901 | Second VM VNC console |
+| 5902 | Third VM VNC console |
+| ... | +1 per additional running VM |
+
+Each running VM receives the next available port in sequence.
+
+## 🔍 How It Works
+
+The first started VM uses 5900
+
+Each additional VM increments the port by +1
+
+Ports are only active while the VM is running
+
+If a VM stops, its assigned port becomes available again.
+
+> **⚠️ Security Notice**
+> 
+> VNC ports (5900+) should not be exposed to the public Internet.
+> 
+> These ports are intended for local network access only.
+>
+> If remote access is required, use a VPN or secure tunnel.
 
 ---
 
