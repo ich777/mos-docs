@@ -216,4 +216,37 @@ MOS is intended for:
 
 ---
 
+## Repositories & Documentation
+
+Related repositories and components of the MOS ecosystem:
+
+### MOS Documentation
+- **[MOS Docs](https://github.com/ich777/mos-docs)**
+
+### Frontende and API 
+- **[MOS Frontend](https://github.com/ich777/mos-frontend)**
+- **[MOS API](https://github.com/ich777/mos-api)**
+
+### Base OS:
+- **[MOS Kernel](https://github.com/ich777/mos-kernel)**
+- **[MOS rootfs](https://github.com/ich777/mos-rootfs)**
+
+### Base Packages:
+- **[MOS Docker](https://github.com/ich777/mos-moby)**
+- **[MOS LXC](https://github.com/ich777/mos-lxc)**
+- **[MOS QEMU](https://github.com/ich777/mos-qemu)**
+
+### MOS Specific Packages:
+- **[MOS Notify](https://github.com/ich777/mos-notify)**
+- **[MOS image-sha](https://github.com/ich777/mos-image-sha)**
+- **[MOS mergerfs](https://github.com/ich777/mos-mergerfs)**
+- **[MOS SnapRAID](https://github.com/ich777/mos-snapraid)**
+- **[MOS docker-watchdog](https://github.com/ich777/mos-docker-watchdog)**
+
+### MOS Misc Custom Repositories:
+- **[MOS Boot Files](https://github.com/ich777/mos-boot-files)**
+- **[MOS GRUB](https://github.com/ich777/mos-grub)**
+
+---
+
 *Parts of this documentation were created with the assistance of AI tool, all AI-generated content has undergone review, but it may still contain inaccuracies, omissions, or outdated information.*
