@@ -188,6 +188,10 @@ MOS is intended for:
 
 - [API Overview](API/API_Overview.md)
 
+# 📦 Plugins
+
+- [MOS Plugin Repository](https://github.com/ich777/mos-docs/blob/master/Plugins/MOS_Plugin_Development_Guide.md)
+
 # 🏬 MOS Hub
 
 - [Creating Your Own MOS Hub Repository](https://github.com/ich777/mos-docs/blob/master/MOS_Hub/Create_Your_Own_MOS_Hub_Custom_Repository.md)
