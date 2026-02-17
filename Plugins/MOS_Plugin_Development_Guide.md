@@ -1,4 +1,4 @@
-# 🔌 MOS Plugin Repository
+# 📦 MOS Plugin Repository
 
 This repository contains a plugin for **MOS**.
 It explains how to create and configure your own MOS plugin, including the required project structure, configuration files, optional settings, functions, and build workflow.
