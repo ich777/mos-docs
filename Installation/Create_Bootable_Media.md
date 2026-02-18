@@ -1,27 +1,34 @@
 # 🔧 Create Bootable Media
 
 The installation process is intentionally kept simple.
- 
+
 Follow these steps to prepare a bootable USB drive:
 
-1. Prepare the USB Stick
+1. **Prepare the USB Stick**
 
-   Format a USB stick as FAT32 and set the label/name to ```MOS```.
+   Format a USB stick as FAT32 and set the label/name to `MOS`.  
+   *Minimum recommended size: 8GB (16GB recommended to be on the safe side).*
 
-2. Download the Installation Files
+2. **Download the Installation Files**
 
-    Download the latest version of the system (.zip Archive) from the [Releases](https://github.com/ich777/mos-releases/releases) from the **Assets** section.
+   Download the latest version of the system (.zip Archive) from the [Releases](https://github.com/ich777/mos-releases/releases) from the **Assets** section.
 
-3. Extract the Files
+3. **Extract the Files**
 
-    Extract the downloaded archive directly onto the USB stick.
+   Extract the downloaded archive directly onto the USB stick.
 
-    No additional imaging tools or software are required.
+   No additional imaging tools or software are required.
 
-4. Boot from the USB Stick
+4. **Boot from the USB Stick**
 
-    Insert the USB stick into the target machine, select it in the boot menu, and the installation process can begin immediately.
+   Insert the USB stick into the target machine, select it in the boot menu, and the installation process can begin immediately.
 
-5. A network connection will be needed to access the WebUI to set initial account passwords.
+5. **Complete the Setup**
 
-   Go to the Webui via http://MOS-IP/
+   A network connection will be needed to access the WebUI to set initial account passwords.
+
+   Go to the WebUI via `http://MOS-IP/`
+
+---
+
+**Note:** While a USB stick is recommended, you can also use an external hard drive or card reader as long as it's formatted as FAT32.
