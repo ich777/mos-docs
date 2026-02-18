@@ -14,7 +14,7 @@ Manage Docker containers, create LXC containers, or run full virtual machines �
 
 Create shared folders, manage users, and assign granular permissions. The system works perfectly as a central file and network solution.
 
-# 🧩 Powered by Debian
+# 🧩 Powered by Devuan
 
 The platform is built on a stable Linux foundation and is currently in active early development. New features and improvements are added continuously.
 
