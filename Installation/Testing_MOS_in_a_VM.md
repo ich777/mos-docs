@@ -1,15 +1,14 @@
-# Testing MOS in a Virtual Machine
+# 🧪 Testing MOS in a Virtual Machine
 
-MOS can be tested easily inside a virtual machine.  
+MOS can be tested easily inside a virtual machine.
 This is useful for evaluation, development, or getting familiar with the WebUI before installing MOS on physical hardware.
 
-> **Note:**  
-> MOS supports **UEFI boot only** by default.  
-> Legacy BIOS / CSM boot is **not supported**.
+> ⚠️ **Note:** MOS supports **UEFI boot only** by default. Legacy BIOS / CSM boot is **not supported**.
 
 ---
 
-### Virtual Machine Installation
+## 📦 VM Image
+
 ```
 mos_amd64.img.xz
 ```
@@ -22,11 +21,9 @@ mos_amd64.img.xz
 
 ## 🧰 Preparing the VM Image
 
-### Extract the Image (Linux)
+Extract the image on Linux:
 
-To extract the VM image, run:
-
-```
+```bash
 unxz --decompress mos_amd64.img.xz
 ```
 
@@ -38,48 +35,34 @@ mos_amd64.img
 
 ---
 
-## 🖥 Creating the Virtual Machine
+## 🖥️ Creating the Virtual Machine
 
-You can use MOS with common hypervisors such as:
+MOS works with common hypervisors such as:
 
 - KVM / QEMU
-
 - Proxmox
-
 - VMware
-
-- VirtualBox (UEFI enabled)
+- VirtualBox (UEFI must be enabled)
 
 ### Recommended VM Settings
 
-| Setting     | Value                        |
-| ----------- | ---------------------------- |
-| Firmware    | **UEFI**                     |
-| CPU         | 4 cores or more              |
-| Memory      | 8 GB recommended             |
-| Network     | Bridged or NAT               |
+| Setting | Value |
+|---|---|
+| Firmware | **UEFI** |
+| CPU | 4 cores or more |
+| Memory | 8 GB recommended |
+| Network | Bridged or NAT |
 
 ---
 
 ## 🔌 Attaching the Image to the VM
 
-The extracted image must be mounted as a USB device.
+The extracted image must be attached as a **USB device** — not as a regular virtual hard disk. MOS expects the image to behave like a bootable USB stick.
 
-**Important**
-
-- Do not attach the image as a regular virtual hard disk
-
-- MOS expects the image to behave like a bootable USB stick
-
-How this is done depends on the hypervisor:
-
-- **KVM / QEMU**
-
-  Attach the image as a USB storage device
-
-- **VMware / VirtualBox**
-
-  Use USB passthrough or raw image support with UEFI enabled
+| Hypervisor | Method |
+|---|---|
+| **KVM / QEMU** | Attach the image as a USB storage device |
+| **VMware / VirtualBox** | Use USB passthrough or raw image support with UEFI enabled |
 
 > The image already contains everything needed to boot MOS.
 
@@ -89,9 +72,7 @@ How this is done depends on the hypervisor:
 
 The following steps describe how to run the MOS test image inside Proxmox VE.
 
-> ⚠️ Important
-> 
-> MOS requires UEFI boot and Secure Boot must be disabled.
+> ⚠️ MOS requires UEFI boot and Secure Boot must be **disabled**.
 
 ---
 
@@ -99,47 +80,38 @@ The following steps describe how to run the MOS test image inside Proxmox VE.
 
 Create a new VM with the following settings:
 
-| Setting	    | Value |
-| ----------- | ---------------------------- |
-| BIOS	      | OVMF (UEFI) |
-| Display	    | VirtIO-GPU |
+| Setting | Value |
+|---|---|
+| BIOS | OVMF (UEFI) |
+| Display | VirtIO-GPU |
 | Secure Boot | ❌ Disabled |
-| Machine	q35 | (recommended) |
-| Disk	      | Can be empty |
+| Machine | q35 (recommended) |
+| Disk | Can be empty |
 
 ---
 
 ### 2️⃣ Disable Secure Boot
 
-Proxmox enables Secure Boot by default when using OVMF.
+Proxmox enables Secure Boot by default when using OVMF. You must disable it using one of the following methods:
 
-You must disable it using one of the following methods:
+**Option A — Recommended**
 
-#### Option A (Recommended)
+During VM creation, make sure **"Pre-enrolled keys"** is **not** checked.
 
-During VM creation:
+**Option B**
 
-- Make sure “Pre-enrolled keys” is NOT checked
+If Secure Boot is still active after creation:
 
----
-
-#### Option B
-
-If Secure Boot is still active:
-
-- Boot the VM
-
-- Enter the UEFI Setup
-
-- Disable Secure Boot
-
-- Save and exit
+1. Boot the VM
+2. Enter the UEFI Setup
+3. Disable Secure Boot
+4. Save and exit
 
 ---
 
 ### 3️⃣ Upload the MOS Image
 
-Upload ```mos_amd64.img``` to:
+Upload `mos_amd64.img` to the Proxmox ISO storage:
 
 ```
 /var/lib/vz/template/iso/
@@ -151,7 +123,7 @@ Upload ```mos_amd64.img``` to:
 
 From the Proxmox host shell:
 
-```
+```bash
 cp /var/lib/vz/template/iso/mos_amd64.img /var/lib/vz/images/mos_amd64.img
 ```
 
@@ -159,39 +131,35 @@ cp /var/lib/vz/template/iso/mos_amd64.img /var/lib/vz/images/mos_amd64.img
 
 ### 5️⃣ Modify the VM Configuration
 
-Edit the VM config:
+Edit the VM config file:
 
-```
+```bash
 nano /etc/pve/qemu-server/<vmid>.conf
 ```
 
-Add:
+Add the following lines:
 
 ```
 usb0: spice,usb3=1
 args: -drive file=/var/lib/vz/images/mos_amd64.img,format=raw,if=none,id=usbdisk -device usb-storage,drive=usbdisk
 ```
-This attaches the MOS image as a USB storage device.
+
+> This attaches the MOS image as a USB storage device.
 
 ---
 
 ### ▶️ Start the VM
 
-Start the VM and MOS will boot automatically.
+Start the VM — MOS will boot automatically.
 
 ---
 
-## ▶️ First Boot
+## 🚀 First Boot
 
-- Start the virtual machine
-
-- Ensure it boots via UEFI
-
-- MOS will boot automatically
-
-- Obtain the IP address from the VM console or DHCP server
-
-- Open the MOS WebUI in your browser:
+1. Start the virtual machine and ensure it boots via UEFI
+2. MOS will boot automatically
+3. Obtain the IP address from the VM console or your DHCP server
+4. Open the MOS WebUI in your browser:
 
 ```
 http://<mos-ip-address>
@@ -202,9 +170,7 @@ http://<mos-ip-address>
 ## ✅ What to Expect
 
 - Full MOS WebUI available
-
-- Pools, Docker, LXC and VM features can be explored
-
+- Pools, Docker, LXC, and VM features can be explored
 - Ideal for testing workflows and configuration
 
 ---
@@ -212,21 +178,14 @@ http://<mos-ip-address>
 ## ⚠️ Limitations in Virtual Machines
 
 - Hardware-specific features may be unavailable
-
 - GPU or PCI passthrough depends on the hypervisor
-
 - Not intended for production workloads
 
 ---
 
-🧪 Summary
+## 🧪 Summary
 
-- MOS can be tested easily in a VM
-
-- Use mos_amd64.img.xz
-
-- Extract the image and attach it as a USB device
-
-- UEFI boot is mandatory
-
-- Ideal for evaluation and development
+- Use `mos_amd64.img.xz` to test MOS in a VM
+- Extract the image and attach it as a **USB device**
+- **UEFI boot is mandatory** — Secure Boot must be disabled
+- Ideal for evaluation and development before deploying on physical hardware
