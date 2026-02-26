@@ -108,9 +108,8 @@ Defines metadata about the repository maintainer.
 
 ```json
 {
-  "name": "Your Name",
-  "github": "your-github-username",
-  "email": "your-email@example.com"
+  "maintainer": "NAME",
+  "donation": "DONATION URL"
 }
 ```
 
