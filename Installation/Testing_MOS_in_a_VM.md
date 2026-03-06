@@ -171,7 +171,6 @@ http://<mos-ip-address>
 
 - Full MOS WebUI available
 - Pools, Docker, LXC, and VM features can be explored
-- Ideal for testing workflows and configuration
 
 ---
 
@@ -179,7 +178,6 @@ http://<mos-ip-address>
 
 - Hardware-specific features may be unavailable
 - GPU or PCI passthrough depends on the hypervisor
-- Not intended for production workloads
 
 ---
 
@@ -188,4 +186,3 @@ http://<mos-ip-address>
 - Use `mos_amd64.img.xz` to test MOS in a VM
 - Extract the image and attach it as a **USB device**
 - **UEFI boot is mandatory** — Secure Boot must be disabled
-- Ideal for evaluation and development before deploying on physical hardware
