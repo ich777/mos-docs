@@ -1,6 +1,14 @@
-# Start Network Configuration
+# 🌐 Network Configuration
 
-Initial network configuration in MOS is performed through the web interface under:
+MOS provides a flexible network configuration system supporting:
+
+- Multiple network interfaces (Multi-NIC)
+- Network bridges
+- VLAN configuration
+- IPv4 and IPv6 support
+- DHCP or static IP configuration
+
+The network configuration can be managed through the MOS WebUI.
 
 **Settings → Network Interfaces**
 
@@ -8,16 +16,45 @@ This section defines how the system connects to the network and how services suc
 
 Example:
 
-<img width="2545" height="769" alt="image" src="https://github.com/user-attachments/assets/e9c356e7-71d9-4b3b-a5b7-b3144c4ba545" />
 
 
 ---
 
 ## Network Interfaces
 
-The **Network Interfaces** page allows configuring physical and logical network interfaces used by the system.
+Each detected network interface can be configured individually.
 
-Each interface can be configured individually and assigned a specific networking mode.
+Typical interfaces include:
+
+- Physical network interfaces (e.g. `eth0`, `eth1`)
+- Bridge interfaces (e.g. `br0`)
+- VLAN interfaces
+
+Example view:
+
+- `eth0` → physical network interface
+- `br0` → bridge used by VMs and containers
+
+---
+
+## 🖧 Multi-NIC Support
+
+MOS supports multiple physical network interfaces.
+
+This allows setups such as:
+
+- Separate **management and VM networks**
+- **Storage network isolation**
+- **Multiple bridges**
+- Advanced homelab network topologies
+
+Example:
+
+| Interface | Usage |
+|------|------|
+| eth0 | Management network |
+| eth1 | VM network |
+| br0 | Bridge for virtualization |
 
 ---
 
@@ -170,6 +207,64 @@ Only enable IPv6 if your network infrastructure fully supports it.
 
 ---
 
+# 🏷 VLAN Configuration
+
+MOS supports creating VLAN interfaces directly from the WebUI.
+
+To create a VLAN:
+
+`Add VLAN`
+
+## VLAN Settings
+
+| Setting | Description |
+|------|------|
+| VLAN ID | The VLAN identifier (e.g. 10, 20, 30) |
+| MTU | Optional MTU size |
+| No IP Assignment | VLAN used only for bridging |
+
+---
+
+## VLAN with IP Configuration
+
+If **No IP Assignment** is disabled, you can configure:
+
+- IPv4 DHCP
+- Static IPv4
+- IPv6
+
+This allows MOS itself to communicate within the VLAN network.
+
+---
+
+## VLAN Use Cases
+
+Typical scenarios include:
+
+- Dedicated networks for VMs
+- Storage networks
+- Management networks
+- Segmented homelab environments
+
+---
+
+# ⚠️ Network Configuration Safety
+
+When applying network changes, MOS protects you from accidental lockouts.
+
+After applying a new network configuration:
+
+- MOS starts a **60 second confirmation timer**
+- You must click **Accept** to confirm the new configuration
+
+If the configuration is **not confirmed within 60 seconds**:
+
+- The previous network configuration will be **automatically restored**
+
+This prevents losing access to the WebUI due to incorrect network settings.
+
+---
+
 ## Best Practices
 
 - Use a **static IPv4 address** for servers
@@ -179,11 +274,14 @@ Only enable IPv6 if your network infrastructure fully supports it.
 
 ---
 
-## Summary
+# ✅ Summary
 
-The Network Interfaces configuration defines how MOS connects to your network and how services are exposed.
+MOS networking supports:
 
-Correct configuration is essential for:
-- Web interface accessibility
-- Container and VM networking
-- Stable server operation
+- Multiple network interfaces
+- Bridge networking
+- VLAN configuration
+- Static or DHCP networking
+- IPv4 and IPv6
+
+Network changes are protected by a **60-second rollback mechanism** to prevent accidental loss of connectivity.
