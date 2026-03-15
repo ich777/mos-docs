@@ -16,7 +16,7 @@ This section defines how the system connects to the network and how services suc
 
 Example:
 
-
+https://github.com/ich777/mos-docs/blob/master/images/2026-03-15%2010_40_47-.png?raw=true
 
 ---
 
