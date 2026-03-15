@@ -20,6 +20,23 @@ Example:
 
 ---
 
+# ⚠️ Network Configuration Safety
+
+When applying network changes, MOS protects you from accidental lockouts.
+
+After applying a new network configuration:
+
+- MOS starts a **60 second confirmation timer**
+- You must click **Accept** to confirm the new configuration
+
+If the configuration is **not confirmed within 60 seconds**:
+
+- The previous network configuration will be **automatically restored**
+
+This prevents losing access to the WebUI due to incorrect network settings.
+
+---
+
 ## Network Interfaces
 
 Each detected network interface can be configured individually.
@@ -245,23 +262,6 @@ Typical scenarios include:
 - Storage networks
 - Management networks
 - Segmented homelab environments
-
----
-
-# ⚠️ Network Configuration Safety
-
-When applying network changes, MOS protects you from accidental lockouts.
-
-After applying a new network configuration:
-
-- MOS starts a **60 second confirmation timer**
-- You must click **Accept** to confirm the new configuration
-
-If the configuration is **not confirmed within 60 seconds**:
-
-- The previous network configuration will be **automatically restored**
-
-This prevents losing access to the WebUI due to incorrect network settings.
 
 ---
 
