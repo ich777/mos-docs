@@ -37,6 +37,43 @@ This prevents losing access to the WebUI due to incorrect network settings.
 
 ---
 
+## 🔁 Confirming the Configuration
+
+After applying changes, the **Network Interfaces page must be opened again** to confirm the new configuration.
+
+If the IP address **did not change**:
+
+- Simply reopen the **Network Interfaces page**
+- Click **Accept** within the 60 second window
+
+---
+
+## 🌐 If the IP Address Changed
+
+If the network configuration changes the IP address of the MOS system:
+
+1. Open the WebUI using the **new IP address**
+2. Navigate again to:
+
+**Settings → Network Interfaces**
+
+3. Click **Accept** within **60 seconds**
+
+You must access the WebUI using the **new address** before the 60 second timer expires.
+
+---
+
+## ⏱ What Happens If You Don't Confirm?
+
+If the configuration is **not confirmed within 60 seconds**:
+
+- MOS automatically **restores the previous network configuration**
+- The system becomes reachable again via the **old IP address**
+
+This mechanism ensures you cannot permanently lock yourself out of the system.
+
+---
+
 ## Network Interfaces
 
 Each detected network interface can be configured individually.
