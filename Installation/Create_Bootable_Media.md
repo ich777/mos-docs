@@ -8,6 +8,9 @@ Follow these steps to prepare a bootable USB drive:
 ### 1. 🖴 Prepare the USB Stick
 
 Format a USB stick as FAT32 and set the label/name to `MOS`.
+Ensure the disk is bootable.
+- [OSX Instructions](https://tomaskala.com/posts/bootable-fat32-macos/)  
+- [Windows Instructions](https://rufus.ie/en/)  
 
 > Minimum recommended size: **8 GB** (16 GB recommended to be on the safe side).
 
