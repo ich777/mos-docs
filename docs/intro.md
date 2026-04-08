@@ -75,8 +75,8 @@ MOS is built from multiple open-source components:
 | Resource | Link |
 |----------|------|
 | **Discord Community** | [Join our Discord](https://discord.com/invite/fcTMbuygTV) |
-| **Report Issues** | [GitHub Issues](https://github.com/J000K3R/mos-docs-staging/issues) |
-| **Releases & Changelog** | [GitHub Releases](https://github.com/J000K3R/mos-docs-staging/releases) |
+| **Report Issues** | [GitHub Issues](https://github.com/ich777/mos-docs/issues) |
+| **Releases & Changelog** | [GitHub Releases](https://github.com/ich777/mos-releases) |
 
 ---
 
@@ -84,7 +84,7 @@ MOS is built from multiple open-source components:
 - **[MOS Releases](https://github.com/ich777/mos-releases)**
 
 ### 📚 MOS Documentation
-- **[MOS Docs](https://github.com/J000K3R/mos-docs-staging)**
+- **[MOS Docs](https://github.com/ich777/mos-docs)**
 
 ### 🎨 Frontend and API
 - **[MOS Frontend](https://github.com/ich777/mos-frontend)**
