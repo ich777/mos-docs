@@ -71,15 +71,20 @@ Defines the directory used to store virtual disk images.
 
 ## 💿 VirtIO ISOs
 
-Provides access to VirtIO driver ISO images used by virtual machines.
+Provides access to VirtIO driver ISO images used by virtual machines (primarily for Windows guests).
 
-**Status:**  
-This section is currently **under development**.
+**Available VirtIO ISO Versions**
+Use the dropdown to select the desired VirtIO ISO version, then click the download button (⬇️) to install it.
 
-**Notes:**
-- Functionality may be limited or incomplete
-- Behavior and options may change in future releases
-- Intended for managing VirtIO driver ISOs for guest operating systems
+**Installed VirtIO ISOs**
+All currently installed VirtIO ISOs are listed here as chips/badges.
+
+**Cleanup VirtIO ISOs**
+Removes all VirtIO ISOs that are not currently in use by any VM.
+
+:::tip
+VirtIO drivers are required for Windows VMs to use paravirtualized hardware (disk, network, etc.) for best performance.
+:::
 
 ---
 
