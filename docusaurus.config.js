@@ -56,7 +56,7 @@ const config = {
   themeConfig: {
     announcementBar: {
       id: 'release-0.2.4-beta',
-      content: '🚀 <strong>MOS 0.2.4-beta is out!</strong> — SnapRAID 14.1, Filebrowser operations & login security &nbsp;<a href="https://j000k3r.github.io/mos-docs-staging/Release-Notes/Beta/0.2.4-beta" style="color:#ffffff;">Release Notes →</a>',
+      content: '🚀 <strong>MOS 0.2.4-beta is out!</strong> — SnapRAID 14.1, Filebrowser operations & login security &nbsp;<a href="https://docs.mos-official.net/docs/Release-Notes/Beta/0.2.3-beta" style="color:#ffffff;">Release Notes →</a>',
       backgroundColor: '#fa9725',
       textColor: '#ffffff',
       isCloseable: true,
