@@ -40,7 +40,7 @@ const config = {
       {
         docs: {
           sidebarPath: './sidebars.js',
-          routeBasePath: '/',
+          routeBasePath: '/docs',
           editUrl: 'https://github.com/ich777/mos-docs/edit/main/',
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
