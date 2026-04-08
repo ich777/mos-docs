@@ -1,0 +1,133 @@
+/**
+ * Custom CSS for MOS-Docs (MOS branding with correct contrast ratios)
+ */
+
+:root {
+  --ifm-color-primary: #374151;
+  --ifm-color-primary-dark: #1f2937;
+  --ifm-color-primary-darker: #111827;
+  --ifm-color-primary-darkest: #0f172a;
+  --ifm-color-primary-light: #4b5563;
+  --ifm-color-primary-lighter: #6b7280;
+  --ifm-color-primary-lightest: #9ca3af;
+
+  --ifm-background-color: #ffffff;
+  --ifm-text-color: #1f2937;
+  --ifm-navbar-background-color: #f3f4f6;
+  --ifm-footer-background-color: #e5e7eb;
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+html[data-theme='dark'] {
+  --ifm-color-primary: #d1d5db;
+  --ifm-color-primary-dark: #f3f4f6;
+  --ifm-color-primary-darker: #ffffff;
+  --ifm-color-primary-darkest: #ffffff;
+  --ifm-color-primary-light: #9ca3af;
+  --ifm-color-primary-lighter: #6b7280;
+  --ifm-color-primary-lightest: #4b5563;
+
+  --ifm-background-color: #111827;
+  --ifm-text-color: #f3f4f6;
+  --ifm-navbar-background-color: #1f2937;
+  --ifm-footer-background-color: #111827;
+
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
+}
+
+/* ── Navbar: logo left, title centered ── */
+.navbar__inner {
+  position: relative;
+}
+
+.navbar__title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.6rem;
+  font-weight: 600;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* ── Hero header background ── */
+.heroBanner {
+  background: linear-gradient(135deg, #ffffff 0%, #f3f4f6 100%);
+}
+
+html[data-theme='dark'] .heroBanner {
+  background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+}
+
+/* ── Footer ── */
+.footer a {
+  color: #f3f4f6 !important;
+}
+
+.footer a:hover {
+  color: #ffffff !important;
+}
+
+html[data-theme='dark'] .footer {
+  border-top: 1px solid var(--ifm-color-gray-600);
+}
+
+/* ── Links – only inside doc content area ── */
+.markdown a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+.markdown a:hover {
+  color: #1e40af;
+  text-decoration: underline;
+}
+
+html[data-theme='dark'] .markdown a {
+  color: #60a5fa;
+}
+
+html[data-theme='dark'] .markdown a:hover {
+  color: #93c5fd;
+}
+
+/* ── Buttons ── */
+.button--primary {
+  background-color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+  color: white;
+}
+
+.button--primary:hover {
+  background-color: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-dark);
+  color: white;
+}
+
+.button--secondary {
+  background-color: transparent;
+  color: var(--ifm-color-primary);
+  border: 2px solid var(--ifm-color-primary);
+}
+
+.button--secondary:hover {
+  background-color: var(--ifm-color-primary);
+  color: white;
+}
+
+/* ── Code blocks ── */
+.codeBlockContainer {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.codeBlockContent {
+  border-radius: 0 0 8px 8px;
+}
+
+/* ── Hide version badge ── */
+.theme-doc-version-badge {
+  display: none;
+}

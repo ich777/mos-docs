@@ -1,0 +1,42 @@
+.heroLogo {
+  width: 200px !important;
+  margin-bottom: 1rem !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  background: linear-gradient(135deg, #ffffff 0%, #f3f4f6 100%);
+  color: #1f2937;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.heroLogo {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+}
+
+html[data-theme='dark'] .heroBanner {
+  background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+  color: #f3f4f6;
+}
+
+html[data-theme='dark'] .heroLogo {
+  filter: brightness(0) invert(1);
+}
