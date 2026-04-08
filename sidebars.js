@@ -84,7 +84,7 @@ const sidebars = {
       type: 'category',
       label: '🔌 API',
       items: [
-        { type: 'doc', id: 'API/API', label: 'API' },
+        { type: 'doc', id: 'API/MOS-API-Overview', label: 'MOS API Overview' },
       ],
     },
     {

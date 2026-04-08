@@ -1,5 +1,5 @@
 ---
-sidebar_label: 🔌 API
+sidebar_label: 🔌 MOS API Overview
 sidebar_position: 1
 ---
 
