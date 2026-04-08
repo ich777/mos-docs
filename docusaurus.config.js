@@ -15,7 +15,7 @@ const config = {
   baseUrl: '/',
   organizationName: 'ich777',
   projectName: 'mos-docs',
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
 
   i18n: {
     defaultLocale: 'en',
@@ -40,7 +40,7 @@ const config = {
       {
         docs: {
           sidebarPath: './sidebars.js',
-          routeBasePath: '/',
+          routeBasePath: '/docs/',
           editUrl: 'https://github.com/ich777/mos-docs/edit/main/',
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
@@ -73,6 +73,7 @@ const config = {
         alt: 'MOS Logo',
         src: 'img/mos_black.png',
         srcDark: 'img/mos_white.png',
+        href: '/docs/',
       },
       items: [
         {
@@ -94,7 +95,7 @@ const config = {
           items: [
             {
               label: 'Overview',
-              href: '/',
+              href: '/docs/',
             },
             {
               label: 'MOS Website',

@@ -16,7 +16,7 @@ Pools are required for:
 - Media and backup data
 
 :::tip
-If you want to use ZFS, please take a look at the following section: [ZFS](/System-Management/ZFS)
+If you want to use ZFS, please take a look at the following section: [ZFS](/docs/System-Management/ZFS)
 :::
 
 Example:
