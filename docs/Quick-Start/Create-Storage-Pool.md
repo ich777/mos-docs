@@ -222,7 +222,7 @@ Available options:
 - **vfat** – Only for removable or temporary storage
 
 :::tip
-If you want to use ZFS, please take a look at the following section: [ZFS](/System-Management/ZFS)
+If you want to use ZFS, please take a look at the following section: [ZFS](/docs/System-Management/ZFS)
 :::
 
 ---

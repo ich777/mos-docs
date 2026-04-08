@@ -80,25 +80,6 @@ MOS is built from multiple open-source components:
 
 ---
 
-## 📚 Documentation Structure
-
-Explore MOS by topic:
-
-| 📁 Category | 🔍 Topics |
-|-------------|-----------|
-| [🚀 **Installation**](/docs/Installation/) | Boot media, VM testing, first setup |
-| [⚡ **Quick Start**](/docs/Quick-Start/) | WebUI, network, storage, containers, VMs |
-| [⚙️ **System Management**](/docs/System-Management/) | Settings, cron, logs, MOS Hub, notify |
-| [🖧 **Network**](/docs/Network/) | Interfaces, bonds, routing, firewall |
-| [💾 **Storage**](/docs/category/storage) | Pools, filesystems, shares, snapshots |
-| [🖥️ **Virtualization**](/docs/Virtualization/) | Docker, LXC, VM management |
-| [👤 **Users & Access**](/docs/User-Management/) | User creation, permissions, roles |
-| [🔌 **API**](/docs/API/) | REST API, WebSocket, authentication |
-| [🛠️ **Advanced Usage**](/docs/Advanced-Usage/) | Docker host access, boot scripts |
-| [📋 **Release Notes**](/docs/Release-Notes/) | Version history, changelog |
-
----
-
 ### 🖥️ MOS Releases
 - **[MOS Releases](https://github.com/ich777/mos-releases)**
 
