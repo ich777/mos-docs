@@ -137,36 +137,6 @@ const config = {
       darkTheme: prismThemes.dracula,
     },
   },
-
-  scripts: [
-    {
-      src: 'data:text/css;base64,' + btoa(`
-        .heroBanner {
-          padding: 4rem 0 !important;
-          text-align: center !important;
-          background: linear-gradient(135deg, #ffffff 0%, #f3f4f6 100%) !important;
-        }
-        .hero__title {
-          color: #1f2937 !important;
-          font-size: 3rem !important;
-        }
-        .hero__subtitle {
-          color: #374151 !important;
-          font-size: 1.25rem !important;
-        }
-        html[data-theme='dark'] .heroBanner {
-          background: linear-gradient(135deg, #111827 0%, #1f2937 100%) !important;
-        }
-        html[data-theme='dark'] .hero__title {
-          color: #ffffff !important;
-        }
-        html[data-theme='dark'] .hero__subtitle {
-          color: #e5e7eb !important;
-        }
-      `),
-      defer: false,
-    },
-  ],
 };
 
 export default config;
