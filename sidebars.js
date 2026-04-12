@@ -109,6 +109,7 @@ const sidebars = {
       label: '🛠️ Troubleshooting',
       items: [
         { type: 'doc', id: 'Troubleshooting/Troubleshooting', label: 'Troubleshooting' },
+        { type: 'doc', id: 'Troubleshooting/Diagnostics', label: 'Diagnostics' },
       ],
     },
     {
