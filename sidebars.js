@@ -120,6 +120,7 @@ const sidebars = {
           type: 'category',
           label: '🧪 Beta',
           items: [
+            { type: 'doc', id: 'Release-Notes/Beta/0.3.0-beta', label: '0.3.0-beta' },
             { type: 'doc', id: 'Release-Notes/Beta/0.2.4-beta', label: '0.2.4-beta' },
             { type: 'doc', id: 'Release-Notes/Beta/0.2.3-beta', label: '0.2.3-beta' },
           ],
