@@ -27,6 +27,11 @@ The diagnostics file is saved to `/boot/diagnostics/` on the system. Old diagnos
 
 The diagnostics archive is a `.tar.gz` file named `MOS_YYYY-MM-DD_HH-MM.tar.gz` with the following structure:
 
+## 📦 Archive Structure
+
+The diagnostics archive is a `.tar.gz` file named `MOS_YYYY-MM-DD_HH-MM.tar.gz` with the following structure:
+
+```text
 MOS_YYYY-MM-DD_HH-MM.tar.gz
 ├── mos-release.json        # MOS version & installed packages
 ├── uname.txt               # Kernel version
@@ -65,18 +70,19 @@ MOS_YYYY-MM-DD_HH-MM.tar.gz
 ├── samba/
 │   └── testparm.txt        # Samba configuration test output
 └── system/                 # Hardware & system info
-├── aspm.txt            # PCIe ASPM power management info
-├── bios.txt            # BIOS/UEFI information
-├── cpu.txt             # CPU details
-├── cron.txt            # Active cron jobs (system level)
-├── df.txt              # Disk space usage
-├── dmesg.txt           # Kernel ring buffer messages
-├── dri.txt             # DRM/GPU driver info
-├── lspci.txt           # PCI device list
-├── lsusb.txt           # USB device list
-├── memory.txt          # Memory/RAM information
-├── motherboard.txt     # Motherboard/DMI information
-└── nginx.conf          # NGINX webserver configuration
+    ├── aspm.txt            # PCIe ASPM power management info
+    ├── bios.txt            # BIOS/UEFI information
+    ├── cpu.txt             # CPU details
+    ├── cron.txt            # Active cron jobs (system level)
+    ├── df.txt              # Disk space usage
+    ├── dmesg.txt           # Kernel ring buffer messages
+    ├── dri.txt             # DRM/GPU driver info
+    ├── lspci.txt           # PCI device list
+    ├── lsusb.txt           # USB device list
+    ├── memory.txt          # Memory/RAM information
+    ├── motherboard.txt     # Motherboard/DMI information
+    └── nginx.conf          # NGINX webserver configuration
+```
 
 ---
 
