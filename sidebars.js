@@ -33,7 +33,7 @@ const sidebars = {
         { type: 'doc', id: 'System-Management/Boot', label: 'Boot' },
         { type: 'doc', id: 'System-Management/Drivers', label: 'Drivers' },
         { type: 'doc', id: 'System-Management/ZFS', label: 'ZFS' },
-        { type: 'doc', id: 'System-Management/S.M.A.R.T.', label: 'S.M.A.R.T.' },
+        { type: 'doc', id: 'System-Management/SMART', label: 'S.M.A.R.T.' },
         {
           type: 'category',
           label: '💻 System Configuration',
