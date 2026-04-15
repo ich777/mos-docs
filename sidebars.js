@@ -80,6 +80,7 @@ const sidebars = {
       label: '🌐 Network',
       items: [
         { type: 'doc', id: 'Network/Network-Configuration', label: 'Network Configuration' },
+        { type: 'doc', id: 'Network/Network-Services', label: 'Network Services' },
       ],
     },
     {

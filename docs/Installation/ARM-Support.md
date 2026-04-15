@@ -115,3 +115,7 @@ If you have any questions or issues with ARM boot:
 - **Join our [Discord](https://discord.com/invite/fcTMbuygTV)** and let us know if you had success booting MOS on ARM
 - Report your board model and any error messages
 - Share your device tree filename to help expand our supported devices list
+
+---
+
+_Parts of this documentation were created with the assistance of AI tools. All AI-generated content has undergone review, but it may still contain inaccuracies, omissions, or outdated information._
