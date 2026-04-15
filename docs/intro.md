@@ -20,6 +20,7 @@ New to MOS? Follow these steps to get up and running:
 | 2️⃣ | [First Walkthrough](/docs/Installation/First-Walkthrough) | Complete initial setup (root password, network, storage) |
 | 3️⃣ | [WebUI Overview](/docs/Quick-Start/WebUI-Overview) | Learn the MOS interface and navigation |
 | 🧪 | [Test in VM](/docs/Installation/Testing-MOS-in-a-Virtual-Machine) | Try MOS in a virtual machine first (optional) |
+| 🔧 | [ARM Support (Experimental)](/docs/Installation/ARM-Support) | Install MOS on ARM devices (Orange Pi, Raspberry Pi, etc.) |
 
 ---
 
