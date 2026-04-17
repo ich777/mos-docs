@@ -1,6 +1,6 @@
 ---
 sidebar_label: 🛍️ MOS Hub
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 # 🛍️ MOS Hub

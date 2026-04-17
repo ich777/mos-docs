@@ -1,6 +1,6 @@
 ---
 sidebar_label: ⚙️ System Settings
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # ⚙️ System

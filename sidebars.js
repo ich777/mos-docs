@@ -40,6 +40,7 @@ const sidebars = {
           label: '💻 System Configuration',
           items: [
             { type: 'doc', id: 'System-Management/System-Configuration/System-Settings', label: 'System Settings' },
+            { type: 'doc', id: 'System-Management/System-Configuration/Update-System', label: 'Update System' },
             { type: 'doc', id: 'System-Management/System-Configuration/Cron-Jobs', label: 'Cron Jobs' },
             { type: 'doc', id: 'System-Management/System-Configuration/Logs', label: 'Logs' },
             { type: 'doc', id: 'System-Management/System-Configuration/MOS-Hub', label: 'MOS-Hub' },

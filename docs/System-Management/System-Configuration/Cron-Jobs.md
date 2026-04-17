@@ -1,6 +1,6 @@
 ---
 sidebar_label: ⏰ Cron Jobs
-sidebar_position: 2
+sidebar_position: 5
 ---
 
 # ⏰ Cron Jobs
