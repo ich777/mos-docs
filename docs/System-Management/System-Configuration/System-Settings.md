@@ -15,7 +15,7 @@ These settings affect global system behavior and should be configured carefully.
 
 Example:
 
-![System Configuration](/img/system/System-Configuration.png)
+![System Configuration - General](/img/system/System-Configuration-General.png)
 
 ---
 
@@ -103,6 +103,82 @@ Controls whether command and system history is preserved across reboots.
 **Use cases:**
 - Enable for auditing and troubleshooting
 - Disable for privacy-focused or minimal systems
+
+---
+
+## 🌐 Web UI Settings
+
+Configure the MOS Web Interface access and security.
+
+:::warning[WebUI Restart Required]
+Changes to **HTTPS settings**, **Local Domain**, **HTTP Port**, or **HTTPS Port** require a **WebUI restart** to take effect.
+:::
+
+### HTTPS Enabled
+
+Enables or disables HTTPS for secure WebUI access.
+
+**Default:**
+- `Enabled` (green toggle)
+
+**Ports:**
+- **HTTP Port:** `80` (default) - Used when HTTPS is disabled or for redirects
+- **HTTPS Port:** `443` (default) - Secure access port
+
+:::tip[Self-Signed Certificate]
+MOS uses a self-signed certificate for HTTPS. To avoid browser warnings, you can download and import the root certificate on your client devices:
+1. Click **"Download Root Certificate"**
+2. Import the certificate into your browser or system's trusted certificate store
+3. HTTPS warnings will no longer appear
+:::
+
+### Certificate Management
+
+- **Show Certificates** - View current certificate details
+- **Recreate Certificates** - Generate new SSL certificates (useful when certificates expire or for security rotation)
+- **Download Root Certificate** - Download the CA certificate for client import
+
+![System Configuration - Web UI](/img/system/System-Configuration-WebUI.png)
+
+---
+
+## 🔍 Local DNS & Network
+
+### Local DNS Searchname
+
+Defines the local DNS search domain for hostname resolution.
+
+**Default:**
+- `local`
+
+### Network Interfaces
+
+Select the primary network interface for system operations.
+
+---
+
+## 🔄 Update Settings
+
+### Update Checks
+- Enable / Disable
+
+Automatically check for available MOS updates.
+
+### Update Check Schedule (Cron)
+
+Defines the cron schedule for automatic update checks.
+
+**Default:**
+- `0 1 * * *` (daily at 1:00 AM)
+
+:::note
+Use standard cron syntax. For example:
+- `0 1 * * *` - Daily at 1:00 AM
+- `0 */6 * * *` - Every 6 hours
+- `0 0 * * 0` - Weekly on Sunday at midnight
+:::
+
+![System Configuration - Network & Update](/img/system/System-Configuration-Network-Update.png)
 
 ---
 
@@ -223,6 +299,8 @@ Defines addresses or domains that bypass the proxy.
 - `127.0.0.1`
 - `.local`
 
+![System Configuration - NTP & Proxy](/img/system/System-Configuration-NTP-Proxy.png)
+
 ---
 
 ## 💾 Swapfile
@@ -305,6 +383,8 @@ Enables or disables support for additional binary formats through binfmt_misc.
 ### Binfmt Architectures
 
 Defines which additional architectures are supported through binfmt.
+
+![System Configuration - Swap & Binfmt](/img/system/System-Configuration-Swap-Binfmt.png)
 
 ---
 
