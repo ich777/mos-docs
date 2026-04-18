@@ -55,8 +55,8 @@ const config = {
 
   themeConfig: {
     announcementBar: {
-      id: 'release-0.3.0-beta',
-      content: '🚀 <strong>MOS 0.3.0-beta is out!</strong> — Docker 29.4.0, SnapRAID 14.2, S.M.A.R.T. monitoring, PWA notifications & HTTPS support &nbsp;<a href="https://docs.mos-official.net/docs/Release-Notes/Beta/0.3.0-beta" style="color:#ffffff;">Release Notes →</a>',
+      id: 'release-0.4.0-beta',
+      content: '🚀 <strong>MOS 0.4.0-beta is out!</strong> — Kernel 6.18.23, SnapRAID 14.3, HTTPS certificates, file upload & Hub improvements &nbsp;<a href="https://docs.mos-official.net/docs/Release-Notes/Beta/0.4.0-beta" style="color:#ffffff;">Release Notes →</a>',
       backgroundColor: '#fa9725',
       textColor: '#ffffff',
       isCloseable: true,
