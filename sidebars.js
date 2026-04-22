@@ -56,6 +56,7 @@ const sidebars = {
       label: '👤 User Management',
       items: [
         { type: 'doc', id: 'User-Management/Users', label: 'Users' },
+        { type: 'doc', id: 'User-Management/User-Profile', label: 'User Profile' },
       ],
     },
     {
