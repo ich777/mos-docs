@@ -57,16 +57,27 @@ Reflect the purpose of the job
 
 Defines when and how often the cron job is executed.
 
-The schedule follows standard cron syntax.
+MOS provides an intuitive visual scheduler that makes creating cron expressions easy — no need to memorize cron syntax.
 
-**Format:**
+**Schedule Dialog:**
 
-minute hour day month weekday
+![Cron Schedule Dialog](/img/system/Cron_Schedule_Dialog.png)
+
+The visual scheduler allows you to configure:
+
+- **Period** — Select from preset intervals (Year, Month, Week, Day, Hour, Minute)
+- **Month** — Choose specific months or "every month"
+- **Day** — Select specific days or "every day"
+- **Weekday** — Choose specific weekdays or "every day of the week"
+- **Time** — Set exact hour and minute
+
+The configured schedule is automatically converted to standard cron syntax and displayed in real-time at the bottom of the dialog.
 
 **Examples:**
-- `0 2 * * *` → Every day at 02:00
-- `*/5 * * * *` → Every 5 minutes
-- `0 0 * * 0` → Every Sunday at midnight
+- Every day at 02:00 → `0 2 * * *`
+- Every 5 minutes → `*/5 * * * *`
+- Every Sunday at midnight → `0 0 * * 0`
+- Every month on the 1st at 03:00 → `0 3 1 * *`
 
 :::tip
 Use fixed schedules for system tasks to avoid unnecessary load.
