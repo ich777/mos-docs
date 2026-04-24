@@ -56,6 +56,7 @@ const sidebars = {
       label: '👤 User Management',
       items: [
         { type: 'doc', id: 'User-Management/Users', label: 'Users' },
+        { type: 'doc', id: 'User-Management/User-Profile', label: 'User Profile' },
       ],
     },
     {
@@ -89,6 +90,7 @@ const sidebars = {
       label: '🔌 API',
       items: [
         { type: 'doc', id: 'API/MOS-API-Overview', label: 'MOS API Overview' },
+        { type: 'doc', id: 'API/Rate-Limits', label: 'Rate Limits' },
       ],
     },
     {

@@ -189,6 +189,41 @@ Not all plugins support dashboard widgets. Only plugins that provide widget supp
 
 ---
 
+## 🔐 Login Rate Limits
+
+The WebUI implements rate limits for the login area to protect the system from brute-force attacks.
+
+### Configuration
+
+Login rate limits are configured via environment variables in the file `/boot/config/api/env`.
+
+| Variable | Default Value | Description |
+|----------|---------------|-------------|
+| `RATE_LIMIT_MAX_LOGIN` | 5 | Maximum number of failed login attempts |
+| `RATE_LIMIT_LOGIN_WINDOW` | 15 | Time window in minutes during which the maximum attempts are allowed |
+| `RATE_LIMIT_LOGIN_BLOCK` | 30 | Block duration in minutes after exceeding the limits |
+
+### How It Works
+
+1. A user has `RATE_LIMIT_MAX_LOGIN` (default: 5) login attempts within `RATE_LIMIT_LOGIN_WINDOW` (default: 15 minutes)
+2. After exceeding the limit, the account is blocked for `RATE_LIMIT_LOGIN_BLOCK` (default: 30 minutes)
+3. The counter is reset in the following cases:
+   - API restart
+   - Server restart
+   - Successful login
+
+### Example
+
+Default configuration:
+- Maximum of 5 failed login attempts in 15 minutes
+- After 5 failed attempts: 30 minutes block
+
+:::warning Important
+Changes to the configuration require a restart of the API or the server to take effect.
+:::
+
+---
+
 ## ✅ Summary
 
 The MOS WebUI is designed to provide:
