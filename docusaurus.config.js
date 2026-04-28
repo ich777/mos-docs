@@ -55,8 +55,8 @@ const config = {
 
   themeConfig: {
     announcementBar: {
-      id: 'release-0.4.1-beta',
-      content: '🚀 <strong>MOS 0.4.1-beta is out!</strong> — Kernel 6.18.24, Docker v29.4.1, QEMU v11.0.0, SnapRAID v14.4, Cron scheduling & CIDR support &nbsp;<a href="https://docs.mos-official.net/docs/Release-Notes/Beta/0.4.1-beta" style="color:#ffffff;">Release Notes →</a>',
+      id: 'release-0.4.2-beta',
+      content: '🚀 <strong>MOS 0.4.2-beta is out!</strong> — Kernel 6.18.25, 🔐 MFA/TOTP support, 📦 Plugin improvements &nbsp;<a href="https://docs.mos-official.net/docs/Release-Notes/Beta/0.4.2-beta" style="color:#ffffff;">Release Notes →</a>',
       backgroundColor: '#fa9725',
       textColor: '#ffffff',
       isCloseable: true,
