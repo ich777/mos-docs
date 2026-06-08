@@ -29,9 +29,9 @@ As a thank you, every supporter who donates at least $5 will receive a code to u
 
 4. The support banner will be unlocked and visible in the expandable menu at the bottom left of your MOS WebUI
 
-   ![Support Banner Black](/img/support-mos/Support_Banner_Black.png)
+   ![Support Banner Black](/img/support-mos/Support_Banner_Dark_Mode.png)
    
-   ![Support Banner White](/img/support-mos/Support_Banner_White.png)
+   ![Support Banner White](/img/support-mos/Support_Banner_Light_Mode.png)
 
 ---
 
