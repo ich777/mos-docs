@@ -371,6 +371,10 @@ Scrub is especially valuable on `multi + raid1` btrfs pools, where corrupted dat
 A **balance** reorganizes data across the disks in a btrfs pool.  
 It redistributes data chunks to reclaim unused space, reduce fragmentation, and enforce RAID profiles evenly across all devices.
 
+:::note
+A balance is **only available for multi-device pools** (at least 2 disks). On single-disk btrfs pools, the balance operation is not available because there are no additional devices to redistribute data across.
+:::
+
 **What it does:**
 - Reclaims allocated but unused space
 - Reduces file fragmentation
