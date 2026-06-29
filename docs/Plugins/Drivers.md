@@ -1,6 +1,7 @@
 ---
 sidebar_label: 🧩 Drivers
 sidebar_position: 2
+description: "Manage hardware drivers in MOS via Driver Plugins from the MOS Hub. Install NVIDIA, DVB, and other kernel module drivers."
 ---
 
 # 🧩 Drivers

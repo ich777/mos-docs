@@ -1,6 +1,7 @@
 ---
 sidebar_label: 🐳 Docker Local Host Access
 sidebar_position: 1
+description: "Enable Docker containers on LAN networks (macvlan/ipvlan) to access the MOS host system via a shim interface plugin."
 ---
 
 # Docker Local Host Access (Host Shim)

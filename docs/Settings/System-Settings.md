@@ -1,6 +1,7 @@
 ---
 sidebar_label: ⚙️ System Settings
 sidebar_position: 1
+description: "Configure MOS system settings: hostname, keymap, timezone, CPU governor, swap, zswap, NTP, proxy, and display options."
 ---
 
 # ⚙️ System

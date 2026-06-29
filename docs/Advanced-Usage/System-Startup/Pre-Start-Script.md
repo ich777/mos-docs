@@ -1,6 +1,7 @@
 ---
 sidebar_label: 🚀 Pre-Start Script
 sidebar_position: 1
+description: "MOS Pre-Start Script (pre-start.sh): execute commands before storage pools are mounted and services are started."
 ---
 
 # 🚀 System Startup

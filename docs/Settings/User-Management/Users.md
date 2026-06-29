@@ -1,6 +1,7 @@
 ---
 sidebar_label: 👤 Users
 sidebar_position: 1
+description: "Create and manage user accounts in MOS: assign roles, configure Samba access, and control permissions for shares and services."
 ---
 
 # 👤 Create Users

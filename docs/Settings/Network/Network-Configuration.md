@@ -1,6 +1,7 @@
 ---
 sidebar_label: 🌐 Network Configuration
 sidebar_position: 2
+description: "Configure network interfaces in MOS: ethernet, bridged, and bond modes, static IP, DHCP, VLAN, and IPv6 support with 60-second rollback protection."
 ---
 
 # 🌐 Network Configuration

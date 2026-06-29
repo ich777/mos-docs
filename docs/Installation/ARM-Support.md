@@ -1,6 +1,7 @@
 ---
 sidebar_label: 🔧 ARM Support (Experimental)
 sidebar_position: 4
+description: "Install MOS on ARM devices like Orange Pi and Raspberry Pi. Experimental ARM64 support guide with kernel and DTB configuration."
 ---
 
 # 🔧 ARM Support (Experimental)

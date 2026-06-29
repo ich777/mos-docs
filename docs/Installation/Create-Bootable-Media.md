@@ -1,6 +1,7 @@
 ---
 sidebar_label: 🔧 Create Bootable Media
 sidebar_position: 1
+description: "Create a bootable USB stick or VM image to install MOS (Modular Operating System) on your server or homelab."
 ---
 
 import Terminal, { TerminalMuted, TerminalCursor, TerminalSuccess } from '@site/src/components/Terminal';

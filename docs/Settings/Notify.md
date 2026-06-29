@@ -1,6 +1,7 @@
 ---
 sidebar_label: 🔔 Notify
 sidebar_position: 5
+description: "Configure MOS notifications: forward system alerts to Discord, Gotify, Pushover, or PushBits. Go-based notification service setup."
 ---
 
 # 🔔 Notify

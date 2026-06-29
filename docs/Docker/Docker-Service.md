@@ -1,6 +1,7 @@
 ---
 sidebar_label: 🐳 Docker Service
 sidebar_position: 1
+description: "Configure the Docker service in MOS: enable Docker, set storage locations, configure networking, and manage update checks."
 ---
 
 # 🐳 Docker Service

@@ -1,6 +1,7 @@
 ---
 sidebar_label: 🔑 Token
 sidebar_position: 4
+description: "Manage authentication tokens in MOS: create MOS Admin API tokens, GitHub tokens, and Docker Hub tokens for extended functionality."
 ---
 
 # 🔑 Token

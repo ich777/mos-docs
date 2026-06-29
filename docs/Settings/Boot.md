@@ -1,6 +1,7 @@
 ---
 sidebar_label: 💾 Boot
 sidebar_position: 1
+description: "Install and manage the MOS bootloader: install to disk, configure boot files, and set up extra partitions for storage pools."
 ---
 
 # 💾 Boot

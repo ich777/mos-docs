@@ -1,6 +1,7 @@
 ---
 sidebar_label: 🚀 Start the First Container
 sidebar_position: 4
+description: "Deploy your first Docker container in MOS using the Docker service or MOS Hub templates. Complete setup guide with networking and volume configuration."
 ---
 
 # 🚀 Start the First Container

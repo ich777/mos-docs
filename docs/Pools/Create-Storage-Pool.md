@@ -1,6 +1,7 @@
 ---
 sidebar_label: 🗄️ Create a Storage Pool
 sidebar_position: 3
+description: "Create and configure storage pools in MOS using mergerfs, SnapRAID, Btrfs, or ZFS. Step-by-step guide with pool types and filesystem options."
 ---
 
 # 🗄️ Create a Storage Pool

@@ -1,6 +1,7 @@
 ---
 sidebar_label: 📦 LXC Service
 sidebar_position: 2
+description: "Configure the LXC service in MOS: enable Linux Containers, set storage locations, and manage container networking."
 ---
 
 # 📦 LXC Service

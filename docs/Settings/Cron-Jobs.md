@@ -1,6 +1,7 @@
 ---
 sidebar_label: ⏰ Cron Jobs
 sidebar_position: 5
+description: "Create and manage cron jobs in MOS: schedule automated tasks, backups, log rotation, and custom scripts with flexible timing."
 ---
 
 # ⏰ Cron Jobs

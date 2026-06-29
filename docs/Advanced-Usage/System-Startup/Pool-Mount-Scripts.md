@@ -1,6 +1,7 @@
 ---
 sidebar_label: 💾 Pool Mount Scripts
 sidebar_position: 4
+description: "MOS Pool Mount Scripts: execute custom scripts when specific storage pools are mounted during boot."
 ---
 
 # 💾 System Startup

@@ -1,6 +1,7 @@
 ---
 sidebar_label: 🚀 Early Boot Script
 sidebar_position: 3
+description: "MOS Early Boot Script (boot.sh): the earliest execution point for deep system-level modifications before drivers, network, and storage are loaded."
 ---
 
 # 🚀 Early Boot Script (boot.sh)

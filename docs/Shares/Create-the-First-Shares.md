@@ -1,6 +1,7 @@
 ---
 sidebar_label: 📂 Create the First Shares
 sidebar_position: 5
+description: "Create network shares in MOS with SMB and NFS. Configure share permissions, access control, and storage pool assignment."
 ---
 
 # 📂 Create the First Shares

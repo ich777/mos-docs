@@ -1,6 +1,7 @@
 ---
 sidebar_label: 🔧 Kernel Module Configuration
 sidebar_position: 5
+description: "Configure persistent kernel module parameters in MOS via custom modprobe.d files. Useful for ARM board-specific driver settings."
 ---
 
 # 🔧 Kernel Module Configuration (modprobe.d)

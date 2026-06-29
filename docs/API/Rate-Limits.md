@@ -1,6 +1,7 @@
 ---
 sidebar_label: ⏱️ Rate Limits
 sidebar_position: 2
+description: "MOS API rate limits configuration: general request limits and login brute-force protection via environment variables."
 ---
 
 # ⏱️ API Rate Limits

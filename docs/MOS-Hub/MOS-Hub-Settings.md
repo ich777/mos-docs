@@ -1,6 +1,7 @@
 ---
 sidebar_label: 🛍️ MOS Hub
 sidebar_position: 3
+description: "Configure the MOS Hub settings: enable/disable the app store, control update behavior, and manage template repositories."
 ---
 
 # 🛍️ MOS Hub

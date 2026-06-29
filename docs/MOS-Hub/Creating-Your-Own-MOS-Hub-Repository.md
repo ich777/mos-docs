@@ -1,6 +1,7 @@
 ---
 sidebar_label: 🛍️ Creating Your Own MOS Hub Repository
 sidebar_position: 1
+description: "Create your own MOS Hub repository on GitHub to share Docker templates, Compose templates, and plugins with the MOS community."
 ---
 
 # 🛍️ Creating Your Own MOS Hub Repository

@@ -1,6 +1,7 @@
 ---
 sidebar_label: 📋 Logs
 sidebar_position: 6
+description: "View and browse system log files in MOS: access API, boot, cron, Docker, and syslog entries through the WebUI log viewer."
 ---
 
 # 📋 Logs

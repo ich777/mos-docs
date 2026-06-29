@@ -1,6 +1,7 @@
 ---
 sidebar_label: 🧪 Testing MOS in a Virtual Machine
 sidebar_position: 2
+description: "Test MOS (Modular Operating System) in a virtual machine before installing on physical hardware. Step-by-step QEMU/KVM and VirtualBox guide."
 ---
 
 # 🧪 Testing MOS in a Virtual Machine

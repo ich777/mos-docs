@@ -1,6 +1,7 @@
 ---
 sidebar_label: 🖥️ WebUI Overview
 sidebar_position: 1
+description: "Overview of the MOS web interface: dashboard, navigation menu, storage, virtualization, and system configuration panels explained."
 ---
 
 # 🖥️ WebUI Overview

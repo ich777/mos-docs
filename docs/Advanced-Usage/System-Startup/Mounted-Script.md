@@ -1,6 +1,7 @@
 ---
 sidebar_label: 📁 Mounted Script
 sidebar_position: 2
+description: "MOS Mounted Script (mounted.sh): execute commands after storage pools are mounted but before services start."
 ---
 
 # 📁 System Startup

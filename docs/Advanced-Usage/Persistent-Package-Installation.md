@@ -1,6 +1,7 @@
 ---
 sidebar_label: 📦 Persistent Package Installation
 sidebar_position: 4
+description: "Install persistent Debian packages on MOS that survive reboots. Place .deb files in /boot/optional/packages for automatic installation."
 ---
 
 # 📦 Persistent Package Installation

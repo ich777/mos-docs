@@ -1,6 +1,7 @@
 ---
 sidebar_label: 🏁 Post-Start Script
 sidebar_position: 3
+description: "MOS Post-Start Script (post-start.sh): execute commands after all services are fully started."
 ---
 
 # 🏁 System Startup

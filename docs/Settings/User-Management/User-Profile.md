@@ -1,6 +1,7 @@
 ---
 sidebar_label: ⚙️ User Profile
 sidebar_position: 2
+description: "Configure user profile settings in MOS: interface preferences, language, dark mode, UI color, and MFA/TOTP two-factor authentication."
 ---
 
 # ⚙️ User Profile

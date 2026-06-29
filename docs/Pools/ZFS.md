@@ -1,6 +1,7 @@
 ---
 sidebar_label: 💾 ZFS
 sidebar_position: 3
+description: "Enable ZFS support in MOS via the OpenZFS Driver plugin. CLI-only ZFS pool management with automatic import on boot."
 ---
 
 # 💾 ZFS

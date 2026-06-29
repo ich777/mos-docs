@@ -1,6 +1,7 @@
 ---
 sidebar_label: 🔌 Network Services
 sidebar_position: 3
+description: "Enable network services in MOS: SSH, NFS, Dnsmasq, NUT (UPS), Tailscale, Netbird, and iSCSI for remote access, file sharing, and VPN connectivity."
 ---
 
 # 🔌 Network Services

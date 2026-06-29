@@ -1,6 +1,7 @@
 ---
 sidebar_label: 🖥️ Create the First VM
 sidebar_position: 6
+description: "Create your first virtual machine in MOS with KVM/QEMU. Configure CPU, memory, storage, network, and boot from ISO images."
 ---
 
 # 🖥️ Create the First VM

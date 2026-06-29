@@ -1,6 +1,7 @@
 ---
 sidebar_label: 🖥️ VM Service
 sidebar_position: 3
+description: "Configure the VM service in MOS: enable KVM/QEMU virtual machines and define storage locations for VM data."
 ---
 
 # 🖥️ VM Service

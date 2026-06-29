@@ -1,6 +1,7 @@
 ---
 sidebar_label: 🌡️ Sensors
 sidebar_position: 3
+description: "Monitor hardware sensors in MOS: display temperatures, voltages, fan speeds, and custom metrics on the dashboard."
 ---
 
 # 🌡️ Sensors

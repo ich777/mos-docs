@@ -1,6 +1,7 @@
 ---
 sidebar_label: 📊 S.M.A.R.T.
 sidebar_position: 4
+description: "Configure S.M.A.R.T. monitoring in MOS to track disk health, temperature thresholds, and receive warnings for HDD, SSD, and NVMe drives."
 ---
 
 # 📊 S.M.A.R.T.

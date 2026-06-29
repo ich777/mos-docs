@@ -1,6 +1,7 @@
 ---
 sidebar_label: 🔓 Disable MD5 Verification
 sidebar_position: 2
+description: "Disable MD5 checksum verification on MOS boot for advanced scenarios. Marker file-based configuration."
 ---
 
 ## 🔓 Disable MD5 Verification

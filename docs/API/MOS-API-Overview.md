@@ -1,6 +1,7 @@
 ---
 sidebar_label: 🔌 MOS API Overview
 sidebar_position: 1
+description: "MOS REST API overview: fully documented API used by the WebUI. Automate, script, and integrate MOS with external tools via Bearer Token authentication."
 ---
 
 # 🔌 MOS API Overview
